@@ -27,11 +27,11 @@ export interface CampaignImageAsset {
 }
 
 export const STUDIO_WIDE_IMAGES = {
-  hero: '/src/assets/images/hero_active_wellness_1790751977250.jpg',
-  prepare: '/src/assets/images/stage_prepare_mobility_1790751989280.jpg',
-  perform: '/src/assets/images/stage_perform_strength_1790752001478.jpg',
-  recover: '/src/assets/images/stage_recover_science_1790752013266.jpg',
-  community: '/src/assets/images/community_active_run_1790752025757.jpg',
+  hero: '/assets/images/studio/hero_active_wellness_1790751977250.jpg',
+  prepare: '/assets/images/studio/stage_prepare_mobility_1790751989280.jpg',
+  perform: '/assets/images/studio/stage_perform_strength_1790752001478.jpg',
+  recover: '/assets/images/studio/stage_recover_science_1790752013266.jpg',
+  community: '/assets/images/studio/community_active_run_1790752025757.jpg',
 };
 
 /**
