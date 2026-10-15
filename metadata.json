@@ -1,0 +1,6 @@
+{
+  "name": "JAIKLA ACTIVE WELLNESS | Move Better. Live Better.",
+  "description": "Active Wellness experiences combining movement, exercise knowledge, recovery, sport, community and creative experience design by JAIKLA DIGITAL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

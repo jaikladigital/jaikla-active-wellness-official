@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="th" translate="no" class="dark scroll-smooth notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title>JAIKLA ACTIVE WELLNESS | เคลื่อนไหวแบบที่ใช่ ใช้ชีวิตแบบคุณ</title>
+  <meta name="description" content="JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม โดย บริษัท ใจกล้า ดิจิตอล จำกัด" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JAIKLA ACTIVE WELLNESS" />
+  <meta property="og:title" content="JAIKLA ACTIVE WELLNESS | Move Better. Live Better." />
+  <meta property="og:description" content="JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    :root {
+      --font-sans: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', 'Anuphan', sans-serif;
+      --font-display: 'Outfit', 'IBM Plex Sans Thai', 'Anuphan', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: #111111;
+      color: #F8F8FA;
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+    .font-display {
+      font-family: var(--font-display);
+    }
+    .font-mono-tabular {
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+    }
+    .jaikla-display-hero {
+      font-size: clamp(2.35rem, 5vw, 4.35rem);
+      line-height: 1.14;
+      letter-spacing: -0.02em;
+    }
+    .jaikla-display-section {
+      font-size: clamp(1.75rem, 3.6vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+    .jaikla-display-statement {
+      font-size: clamp(1.35rem, 2.5vw, 2.15rem);
+      line-height: 1.28;
+    }
+    .jaikla-btn-primary {
+      background: linear-gradient(135deg, #4B1FD6 0%, #5B1FA6 52%, #7C3AED 100%);
+      box-shadow: 0 10px 28px -6px rgba(124, 58, 237, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      transition: all 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .jaikla-btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 34px -4px rgba(124, 58, 237, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    }
+    .jaikla-photo-grade {
+      filter: contrast(1.04) saturate(0.96);
+      transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1), filter 400ms ease;
+    }
+    .group:hover .jaikla-photo-grade-hover {
+      transform: scale(1.04);
+      filter: contrast(1.07) saturate(1.04);
+    }
+    .jaikla-input-field {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border-radius: 0.75rem;
+      background-color: #14141A;
+      border: 1px solid rgba(248, 248, 250, 0.14);
+      color: #F8F8FA;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .jaikla-input-field:focus {
+      border-color: #7C3AED;
+    }
+    /* Prevent awkward mid-sentence Thai breaks */
+    html[lang="th"] h1, html[lang="th"] h2, html[lang="th"] h3, html[lang="th"] h4, html[lang="th"] p {
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body class="bg-[#111111] text-[#F8F8FA] antialiased selection:bg-[#7C3AED] selection:text-[#F8F8FA]">
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="fixed top-0 left-0 right-0 h-[2px] z-50 pointer-events-none bg-transparent" aria-hidden="true">
+    <div id="scroll-progress-bar" class="h-full bg-gradient-to-r from-[#4B1FD6] via-[#7C3AED] to-[#EBDDFF] transition-all duration-150 ease-out" style="width: 0%"></div>
+  </div>
+
+  <!-- =====================================================================
+       01 — NAVIGATION HEADER
+  ===================================================================== -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-40 transition-all duration-300 bg-[#111111]/90 backdrop-blur-xl border-b border-[#F8F8FA]/10 py-3.5">
+    <div class="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between gap-3">
+      <!-- Official Horizontal Logo -->
+      <a href="#" aria-label="JAIKLA ACTIVE WELLNESS Home" class="inline-flex items-center gap-3 sm:gap-3.5 select-none shrink-0">
+        <svg viewBox="0 0 120 92" fill="none" class="w-9 h-7 sm:w-11 sm:h-8 shrink-0" aria-hidden="true">
+          <defs>
+            <linearGradient id="jk-nav-up" x1="8" y1="84" x2="82" y2="12" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4B1FD6" />
+              <stop offset="100%" stop-color="#7C3AED" />
+            </linearGradient>
+            <linearGradient id="jk-nav-lo" x1="35" y1="74" x2="112" y2="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#5B1FA6" />
+              <stop offset="100%" stop-color="#7C3AED" />
+            </linearGradient>
+          </defs>
+          <path d="M 8 84 C 23 61, 43 13, 63 11 C 72 10, 78 16, 82 24 C 73 19, 63 21, 52 36 C 40 52, 29 71, 22 84 Z" fill="url(#jk-nav-up)" />
+          <path d="M 36 71 C 46 51, 58 29, 71 28 C 83 27, 96 51, 113 80 L 96 80 C 84 64, 74 52, 62 52 C 52 52, 43 60, 36 71 Z" fill="url(#jk-nav-lo)" />
+        </svg>
+        <span class="h-7 sm:h-8 w-[1px] bg-[#F8F8FA]/25 shrink-0" aria-hidden="true"></span>
+        <div class="flex flex-col justify-center leading-none">
+          <svg viewBox="0 0 152 28" fill="none" class="h-3.5 sm:h-4 w-auto text-[#F8F8FA]" role="img" aria-label="JAIKLA">
+            <path d="M 15.6 2 L 15.6 17.1 C 15.6 22.3 12.2 24.9 7.9 24.9 C 4.1 24.9 1.9 22.5 1.9 18.7" stroke="currentColor" stroke-width="3.3" stroke-linecap="butt" stroke-linejoin="round" />
+            <path d="M 35.6 2 L 39.2 2 L 47.4 26 L 43.7 26 L 37.4 6.7 L 31.1 26 L 27.4 26 Z" fill="currentColor" />
+            <path d="M 58.2 2 L 61.6 2 L 61.6 26 L 58.2 26 Z" fill="currentColor" />
+            <path d="M 73.8 2 L 77.2 2 L 77.2 26 L 73.8 26 Z" fill="currentColor" />
+            <path d="M 87.0 2 L 91.2 2 L 80.7 13.4 L 91.8 26 L 87.5 26 L 78.2 15.3 L 77.2 16.4 L 77.2 12.5 Z" fill="currentColor" />
+            <path d="M 102.6 2 L 106.0 2 L 106.0 22.8 L 118.4 22.8 L 118.4 26 L 102.6 26 Z" fill="currentColor" />
+            <path d="M 136.0 2 L 139.6 2 L 147.8 26 L 144.1 26 L 137.8 6.7 L 131.5 26 L 127.8 26 Z" fill="currentColor" />
+          </svg>
+          <span class="font-display text-[8px] sm:text-[9px] font-medium tracking-[0.28em] text-[#EBDDFF]/90 mt-1.5 whitespace-nowrap">ACTIVE WELLNESS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation" class="hidden xl:flex items-center gap-6 text-xs font-medium tracking-wider text-[#A1A1AA]">
+        <a href="#about" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.about">เกี่ยวกับเรา</a>
+        <a href="#journey" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.experience">ประสบการณ์</a>
+        <a href="#solutions" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.solutions">โซลูชัน</a>
+        <a href="#science" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.science">ความรู้เรื่องการเคลื่อนไหว</a>
+        <a href="#community" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.community">คอมมูนิตี้</a>
+        <a href="#partner" class="hover:text-[#F8F8FA] transition-colors py-1" data-i18n="nav.partner">สำหรับองค์กรและแบรนด์</a>
+      </nav>
+
+      <!-- Language Switcher + CTA -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <div class="inline-flex rounded-xl bg-[#17171D] p-1 border border-[#F8F8FA]/12">
+          <button type="button" onclick="setLanguage('th')" id="lang-btn-th" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]">ไทย</button>
+          <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]">EN</button>
+        </div>
+        <button type="button" onclick="openInquiryModal('Corporate Wellness')" class="jaikla-btn-primary px-4 sm:px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider text-[#F8F8FA] whitespace-nowrap cursor-pointer min-h-[40px]" data-i18n="nav.startProject">
+          เริ่มโปรเจกต์กับเรา
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         02 — HERO SECTION
+    ===================================================================== -->
+    <section class="relative min-h-screen pt-28 pb-16 lg:py-0 flex items-center overflow-hidden border-b border-[#F8F8FA]/8">
+      <div class="absolute inset-0 pointer-events-none">
+        <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/studio/hero_active_wellness_1790751977250.jpg" onerror="this.src='https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_14.jpg'" alt="JAIKLA ACTIVE WELLNESS Backdrop" class="w-full h-full object-cover opacity-40 jaikla-photo-grade" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/45 to-transparent"></div>
+      </div>
+
+      <div class="pointer-events-none absolute -top-32 right-1/4 w-[560px] h-[560px] rounded-full bg-[#4B1FD6]/18 blur-[140px]" aria-hidden="true"></div>
+
+      <!-- Hero Kinetic Ribbon SVG -->
+      <svg viewBox="0 0 1440 420" fill="none" class="pointer-events-none absolute inset-x-0 bottom-0 w-full h-[320px] md:h-[420px] opacity-75" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="heroRibbonPrimary" x1="0%" y1="50%" x2="100%" y2="20%">
+            <stop offset="0%" stop-color="#4B1FD6" stop-opacity="0" />
+            <stop offset="25%" stop-color="#5B1FA6" stop-opacity="0.55" />
+            <stop offset="65%" stop-color="#7C3AED" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#EBDDFF" stop-opacity="0.2" />
+          </linearGradient>
+        </defs>
+        <path d="M-80 360 C 260 340, 480 120, 840 190 C 1120 245, 1290 70, 1520 40" stroke="url(#heroRibbonPrimary)" stroke-width="3" stroke-linecap="round" />
+      </svg>
+
+      <div class="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 w-full py-12 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Left 7 Columns -->
+          <div class="lg:col-span-7 space-y-7">
+            <div class="pt-3 sm:pt-5 lg:pt-7 space-y-3.5 sm:space-y-4">
+              <h1 class="font-display jaikla-display-hero font-extrabold text-[#F8F8FA]">
+                <span class="block" data-i18n="hero.line1">เคลื่อนไหวแบบที่ใช่</span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#F8F8FA] via-[#EBDDFF] to-[#7C3AED] mt-1" data-i18n="hero.line2">ใช้ชีวิตแบบคุณ</span>
+              </h1>
+
+              <div class="space-y-3 sm:space-y-3.5">
+                <p class="text-lg sm:text-xl text-[#F8F8FA]/92 font-normal" data-i18n="hero.lead">
+                  เราอยากให้เรื่องการดูแลร่างกายเป็นเรื่องที่เข้าใจง่ายและทำได้จริง จึงออกแบบกิจกรรมที่ช่วยให้ผู้คนรู้จักร่างกายของตัวเอง เคลื่อนไหวอย่างมั่นใจ และดูแลตัวเองได้ต่อเนื่อง
+                </p>
+                <p class="text-base sm:text-lg text-[#A1A1AA] font-light border-l-2 border-[#7C3AED] pl-4" data-i18n="hero.secondaryLead">
+                  JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 pt-1">
+              <a href="#journey" class="jaikla-btn-primary px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] inline-flex items-center gap-2.5 whitespace-nowrap min-h-[48px]">
+                <span data-i18n="hero.ctaExplore">รู้จัก JAIKLA ACTIVE WELLNESS</span>
+                <span>→</span>
+              </a>
+              <button type="button" onclick="openInquiryModal('Corporate Wellness')" class="px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] bg-[#17171A]/90 hover:bg-[#22222A] border border-[#F8F8FA]/15 hover:border-[#7C3AED] transition-all duration-200 inline-flex items-center gap-2 whitespace-nowrap min-h-[48px] cursor-pointer">
+                <span data-i18n="hero.ctaWork">คุยกับเรา</span>
+                <span class="text-[#EBDDFF]">↗</span>
+              </button>
+            </div>
+
+            <!-- Core Concept + Social Media Follow Bar (Tightly unified with minimal line spacing) -->
+            <div class="pt-3 border-t border-[#F8F8FA]/10 space-y-1.5">
+              <p class="text-xs font-mono-tabular tracking-wider text-[#A1A1AA] leading-relaxed">
+                <span class="text-[#EBDDFF]" data-i18n="hero.coreConceptLabel">แนวคิดหลัก</span> ·
+                <span data-i18n="hero.coreConceptFormula">ความรู้เรื่องร่างกาย × การเคลื่อนไหว × การฟื้นตัว × ประสบการณ์ × คอมมูนิตี้</span>
+              </p>
+
+              <div class="pt-0.5 space-y-1">
+                <p class="text-[10.5px] font-mono-tabular text-[#EBDDFF] tracking-wider uppercase">ช่องทางโซเชียลมีเดียและ LINE OA</p>
+              <div class="flex flex-nowrap items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+                <a href="https://www.facebook.com/JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://www.tiktok.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                  <span>TikTok</span>
+                </a>
+                <a href="https://www.instagram.com/jaiklaactivewellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  <span>YouTube</span>
+                </a>
+                <a href="https://lin.ee/YEfyYwy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                  <span>LINE Official</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Columns -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-[480px] lg:max-w-none grid grid-cols-12 gap-4 items-stretch">
+              <div class="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] shadow-2xl flex flex-col justify-between">
+                <div class="relative aspect-[4/5] w-full overflow-hidden">
+                  <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_15.jpg" alt="Aspirational Forward Momentum" class="w-full h-full object-cover jaikla-photo-grade jaikla-photo-grade-hover" />
+                </div>
+                <div class="p-3.5 sm:p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
+                  <p class="text-[10px] font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="hero.card1Tag">ฮีโร่ · การเคลื่อนไหว</p>
+                  <p class="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5" data-i18n="hero.card1Title">ก้าวไปข้างหน้าด้วยความเข้าใจในร่างกาย</p>
+                </div>
+              </div>
+
+              <div class="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] shadow-2xl flex flex-col justify-between">
+                <div class="relative aspect-[4/5] w-full overflow-hidden">
+                  <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_09.jpg" alt="Functional Load & Strength Literacy" class="w-full h-full object-cover jaikla-photo-grade jaikla-photo-grade-hover" />
+                </div>
+                <div class="p-3.5 sm:p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
+                  <p class="text-[10px] font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="hero.card2Tag">สมรรถภาพ · ความแข็งแรง</p>
+                  <p class="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5" data-i18n="hero.card2Title">การสร้างความแข็งแรงที่นำไปใช้ได้จริง</p>
+                </div>
+              </div>
+
+              <div class="col-span-12 p-4 sm:p-5 rounded-2xl bg-[#16161B]/95 border border-[#F8F8FA]/12 backdrop-blur-md">
+                <p class="text-[11px] font-mono-tabular text-[#EBDDFF]" data-i18n="hero.positioningLabel">จุดยืนทางธุรกิจ</p>
+                <p class="text-sm font-semibold text-[#F8F8FA] mt-1" data-i18n="hero.positioningTitle">ทีมออกแบบประสบการณ์สุขภาพและการเคลื่อนไหว</p>
+                <p class="text-xs text-[#A1A1AA] mt-1" data-i18n="hero.positioningSub">เชื่อมความรู้เรื่องร่างกาย กีฬา การฟื้นตัว และคอมมูนิตี้ให้ทำงานร่วมกัน</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         02B — REAL FIELD TRACK RECORD (13-PHOTO INTERACTIVE GALLERY)
+    ===================================================================== -->
+    <section id="field-gallery" class="relative py-20 lg:py-28 bg-[#111115] border-b border-[#F8F8FA]/10 overflow-hidden">
+      <div class="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div class="lg:col-span-7 space-y-3.5">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="fieldGallery.kicker">
+              ประสบการณ์จากพื้นที่จริง · การดูแลหลังการเคลื่อนไหว
+            </p>
+            <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA]">
+              <span class="block" data-i18n="fieldGallery.headline1">จากพื้นที่จริง</span>
+              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#F8F8FA] via-[#EBDDFF] to-[#7C3AED]" data-i18n="fieldGallery.headline2">สู่ประสบการณ์ที่เราใส่ใจ</span>
+            </h2>
+            <div class="pt-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[#EBDDFF]/90">
+              <span class="inline-flex items-center gap-1.5 font-medium">✓ <span data-i18n="fieldGallery.badge0">ทีมงานมืออาชีพพร้อมดูแลหน้างานครบวงจร</span></span>
+              <span class="text-[#F8F8FA]/25">·</span>
+              <span class="inline-flex items-center gap-1.5 font-medium">✓ <span data-i18n="fieldGallery.badge1">สร้างภาพลักษณ์ที่ดีและความประทับใจให้แบรนด์</span></span>
+              <span class="text-[#F8F8FA]/25">·</span>
+              <span class="inline-flex items-center gap-1.5 font-medium">✓ <span data-i18n="fieldGallery.badge2">รองรับทั้งกิจกรรมองค์กรและสปอร์ตอีเวนต์</span></span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-3">
+            <p class="text-sm sm:text-base text-[#F8F8FA]/90" data-i18n="fieldGallery.lead">
+              ภาพจากการทำงานจริงของทีมที่ลงพื้นที่ดูแลนักวิ่งและผู้เข้าร่วมกิจกรรม ตั้งแต่การพูดคุย สำรวจความตึงล้า ไปจนถึงการยืดเหยียดและการดูแลหลังจบกิจกรรม
+            </p>
+            <p class="text-xs sm:text-sm text-[#A1A1AA] border-l-2 border-[#7C3AED] pl-3.5" data-i18n="fieldGallery.subLead">
+              ช่วยเติมเต็มคุณภาพให้งานสปอร์ตอีเวนต์ แคมเปญการตลาด และกิจกรรมองค์กร สร้างความเชื่อมั่นและความประทับใจที่ผู้เข้าร่วมอยากบอกต่อ
+            </p>
+          </div>
+        </div>
+
+        <!-- Unified Showcase Frame -->
+        <div class="rounded-3xl bg-gradient-to-b from-[#171721] via-[#13131A] to-[#111116] border border-[#7C3AED]/45 shadow-2xl overflow-hidden p-5 sm:p-8 space-y-6">
+          <!-- Featured Photo Display -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-7 relative rounded-2xl overflow-hidden aspect-[16/10] bg-[#111115] border border-[#F8F8FA]/12">
+              <img id="field-active-img" src="https://drive.google.com/thumbnail?id=1G61_azDLTGEQItdjXTf2B9ajtE766GeA&sz=w1600" alt="Field Activity" class="w-full h-full object-cover transition-all duration-500" />
+              <div class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-[#111115]/85 border border-[#F8F8FA]/15 text-[11px] font-mono-tabular text-[#EBDDFF]" id="field-active-index">
+                01 / 13
+              </div>
+            </div>
+            <div class="lg:col-span-5 space-y-4">
+              <span id="field-active-tag" class="inline-block text-xs font-mono-tabular text-[#EBDDFF] px-3 py-1 rounded-lg bg-[#4B1FD6]/25 border border-[#7C3AED]/40">
+                การคลายกล้ามเนื้อเชิงลึก
+              </span>
+              <h3 id="field-active-title" class="font-display text-2xl sm:text-3xl font-bold text-[#F8F8FA]">
+                ดูแลกล้ามเนื้อขาหลังจบกิจกรรม
+              </h3>
+              <p id="field-active-desc" class="text-sm sm:text-base text-[#A1A1AA] leading-relaxed">
+                หลังเข้าเส้นชัย ทีมงานช่วยดูแลความตึงล้าของกล้ามเนื้อขา เพื่อให้ผู้เข้าร่วมได้ผ่อนคลายและสังเกตสภาพร่างกายของตัวเองก่อนกลับไปพัก
+              </p>
+              <div class="pt-2 flex items-center gap-2">
+                <button type="button" onclick="stepFieldPhoto(-1)" class="px-4 py-2 rounded-xl bg-[#181822] hover:bg-[#242432] border border-[#F8F8FA]/12 text-xs text-[#F8F8FA] cursor-pointer">← ภาพก่อนหน้า</button>
+                <button type="button" onclick="stepFieldPhoto(1)" class="px-4 py-2 rounded-xl bg-[#4B1FD6] hover:bg-[#7C3AED] text-xs text-[#F8F8FA] cursor-pointer">ภาพถัดไป →</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-xs font-mono-tabular text-[#A1A1AA]" data-i18n="fieldGallery.deckHeader">
+            เลือกภาพด้านล่างเพื่อดูเรื่องราวและวิธีทำงานของทีมในแต่ละช่วง
+          </p>
+
+          <!-- 13 Thumbnail Selector Grid -->
+          <div id="field-thumbs-grid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-13 gap-2.5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         03 — THE IDEA (01 · แนวคิดและจุดยืนของแบรนด์)
+    ===================================================================== -->
+    <section id="about" class="relative py-24 lg:py-32 bg-[#121212] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="idea.kicker">01 · แนวคิดและจุดยืนของแบรนด์</p>
+            <div class="space-y-2 sm:space-y-3">
+              <p class="font-display jaikla-display-statement font-bold text-[#A1A1AA]/55" data-i18n="idea.notFitness">มากกว่าการออกกำลังกาย</p>
+              <p class="font-display jaikla-display-statement font-bold text-[#A1A1AA]/70" data-i18n="idea.notWellness">มากกว่าคำว่าเวลเนส</p>
+              <p class="font-display jaikla-display-statement font-bold text-[#A1A1AA]/85" data-i18n="idea.notEvent">มากกว่ากิจกรรมที่จบในวันเดียว</p>
+              <div class="pt-2">
+                <h2 class="font-display jaikla-display-section font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#F8F8FA] via-[#EBDDFF] to-[#7C3AED]">
+                  <span class="block" data-i18n="idea.reveal1">สุขภาพที่เข้าใจง่าย</span>
+                  <span class="block" data-i18n="idea.reveal2">การเคลื่อนไหวที่เข้ากับชีวิตจริง</span>
+                </h2>
+              </div>
+            </div>
+            <p class="text-base sm:text-lg text-[#A1A1AA] pt-2" data-i18n="idea.body1">
+              JAIKLA ACTIVE WELLNESS ไม่ได้ตั้งใจมาแทนโรงพยาบาล คลินิก หรือฟิตเนส แต่เข้ามาเติมพื้นที่ระหว่างความรู้เรื่องร่างกายกับการใช้ชีวิตจริง ผ่านกิจกรรมกีฬา การเตรียมตัว การฟื้นตัว คอนเทนต์ และคอมมูนิตี้
+            </p>
+            <p class="text-sm sm:text-base text-[#A1A1AA]" data-i18n="idea.body2">
+              เราอยากทำให้ความรู้เรื่องร่างกายเข้าถึงง่ายขึ้น เพื่อให้คนดูแลตัวเองได้อย่างมั่นใจ และให้องค์กรหรือแบรนด์สร้างกิจกรรมสุขภาพที่มีความหมายกับผู้เข้าร่วมจริง ๆ
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 grid grid-cols-12 gap-4 items-stretch">
+            <div class="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/10 bg-[#141418] flex flex-col justify-between">
+              <div class="relative aspect-[4/5] w-full overflow-hidden">
+                <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_02.jpg" alt="Body Awareness" class="w-full h-full object-cover jaikla-photo-grade jaikla-photo-grade-hover" />
+              </div>
+              <div class="p-3.5 sm:p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">การรับรู้ร่างกาย · สมดุล</p>
+                <p class="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5">การรับรู้ร่างกายและสมดุลการหายใจ</p>
+              </div>
+            </div>
+
+            <div class="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/10 bg-[#141418] flex flex-col justify-between">
+              <div class="relative aspect-[4/5] w-full overflow-hidden">
+                <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_08.jpg" alt="Mobility" class="w-full h-full object-cover jaikla-photo-grade jaikla-photo-grade-hover" />
+              </div>
+              <div class="p-3.5 sm:p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">สหเวชศาสตร์ · ความคล่องตัว</p>
+                <p class="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5">การเพิ่มองศาการเคลื่อนไหวของแกนกลางลำตัว</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Positioning Comparison Matrix -->
+        <div class="pt-10 border-t border-[#F8F8FA]/10 space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <span class="text-[11px] font-mono-tabular tracking-widest text-[#EBDDFF]">STRATEGIC POSITIONING MATRIX</span>
+              <h3 class="font-display text-xl sm:text-2xl font-bold text-[#F8F8FA]" data-i18n="idea.compareLabel">
+                JAIKLA แตกต่างอย่างไรในโลกของสุขภาพและการเคลื่อนไหว
+              </h3>
+            </div>
+            <div id="matrix-tabs" class="inline-flex flex-wrap gap-1.5 p-1.5 rounded-xl bg-[#17171C] border border-[#F8F8FA]/12">
+              <button type="button" onclick="selectMatrixTab('jaikla')" id="matrix-tab-jaikla" class="px-4 py-2 rounded-lg text-xs font-medium cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]">JAIKLA ACTIVE WELLNESS</button>
+              <button type="button" onclick="selectMatrixTab('clinical')" id="matrix-tab-clinical" class="px-4 py-2 rounded-lg text-xs font-medium cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]">โรงพยาบาล / คลินิก</button>
+              <button type="button" onclick="selectMatrixTab('gym')" id="matrix-tab-gym" class="px-4 py-2 rounded-lg text-xs font-medium cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]">ยิม / ฟิตเนส</button>
+              <button type="button" onclick="selectMatrixTab('event')" id="matrix-tab-event" class="px-4 py-2 rounded-lg text-xs font-medium cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]">อีเวนต์กีฬา</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+            <div class="lg:col-span-8 p-6 sm:p-8 rounded-2xl border bg-gradient-to-br from-[#19162B] via-[#15151E] to-[#131318] border-[#7C3AED]/60 space-y-6">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-5 border-b border-[#F8F8FA]/10">
+                <h4 id="matrix-card-title" class="font-display text-xl sm:text-2xl font-bold text-[#F8F8FA]">JAIKLA ACTIVE WELLNESS</h4>
+                <span id="matrix-card-subtitle" class="text-xs sm:text-sm text-[#EBDDFF] font-medium px-3 py-1 rounded-lg bg-[#111115]/80 border border-[#F8F8FA]/10">
+                  ประสบการณ์สุขภาพที่เชื่อมความรู้ กิจกรรม และคอมมูนิตี้
+                </span>
+              </div>
+              <div class="space-y-3.5">
+                <div class="p-4 sm:p-5 rounded-xl bg-[#111115]/90 border border-[#F8F8FA]/8 grid grid-cols-1 md:grid-cols-12 gap-2 sm:gap-4">
+                  <div class="md:col-span-3">
+                    <span class="block text-[10px] font-mono-tabular text-[#7C3AED] font-semibold">01 · FOCUS</span>
+                    <span class="text-xs sm:text-sm font-semibold text-[#EBDDFF]" data-i18n="idea.headers.focus">จุดเน้นหลัก</span>
+                  </div>
+                  <p id="matrix-card-focus" class="md:col-span-9 text-sm sm:text-[15px] text-[#F8F8FA]/95">
+                    นำความรู้เรื่องร่างกายและการเคลื่อนไหวมาแปลงเป็นกิจกรรมที่เข้าใจง่าย เข้าร่วมได้ และนำกลับไปใช้ต่อในชีวิตประจำวัน
+                  </p>
+                </div>
+                <div class="p-4 sm:p-5 rounded-xl bg-[#111115]/90 border border-[#F8F8FA]/8 grid grid-cols-1 md:grid-cols-12 gap-2 sm:gap-4">
+                  <div class="md:col-span-3">
+                    <span class="block text-[10px] font-mono-tabular text-[#7C3AED] font-semibold">02 · MOOD</span>
+                    <span class="text-xs sm:text-sm font-semibold text-[#EBDDFF]" data-i18n="idea.headers.atmosphere">ลักษณะประสบการณ์</span>
+                  </div>
+                  <p id="matrix-card-atmosphere" class="md:col-span-9 text-sm sm:text-[15px] text-[#F8F8FA]/95">
+                    เป็นกันเอง เข้าถึงง่าย และมีทีมงานคอยดูแลอย่างเหมาะสม เพื่อให้แต่ละคนได้ขยับในจังหวะของตัวเอง
+                  </p>
+                </div>
+                <div class="p-4 sm:p-5 rounded-xl bg-[#141222]/90 border border-[#7C3AED]/35 grid grid-cols-1 md:grid-cols-12 gap-2 sm:gap-4">
+                  <div class="md:col-span-3">
+                    <span class="block text-[10px] font-mono-tabular text-[#EBDDFF] font-semibold">03 · OUTCOME</span>
+                    <span class="text-xs sm:text-sm font-semibold text-[#EBDDFF]" data-i18n="idea.headers.outcome">สิ่งที่ผู้ใช้ได้รับ</span>
+                  </div>
+                  <p id="matrix-card-outcome" class="md:col-span-9 text-sm sm:text-[15px] text-[#EBDDFF] font-medium">
+                    ผู้เข้าร่วมได้รู้จักร่างกายตัวเองมากขึ้น กล้าเคลื่อนไหวมากขึ้น และมีแนวทางดูแลตัวเองต่อหลังจบกิจกรรม
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 p-6 rounded-2xl bg-[#15151B] border border-[#F8F8FA]/12 flex flex-col justify-between space-y-4">
+              <div>
+                <p class="text-[10px] font-mono-tabular tracking-widest text-[#EBDDFF]">ขอบเขตการบูรณาการประสบการณ์</p>
+                <p class="text-xs text-[#A1A1AA] mt-1">คลิกเลือกเพื่อเปรียบเทียบขอบเขตการดูแลผู้เข้าร่วมในแต่ละรูปแบบ</p>
+              </div>
+              <div class="space-y-2.5">
+                <button type="button" onclick="selectMatrixTab('jaikla')" class="w-full p-3.5 rounded-xl border text-left bg-[#1D1930] border-[#7C3AED] space-y-1.5 cursor-pointer">
+                  <div class="flex justify-between text-xs font-semibold text-[#F8F8FA]"><span>JAIKLA ACTIVE WELLNESS</span><span class="text-[#EBDDFF] font-mono-tabular">100% SCOPE</span></div>
+                  <p class="text-[11px] text-[#A1A1AA]">ครบวงจร 5 มิติ (เตรียมพร้อม · เคลื่อนไหว · พัฒนา · ฟื้นฟู · ต่อยอด)</p>
+                </button>
+                <button type="button" onclick="selectMatrixTab('clinical')" class="w-full p-3.5 rounded-xl border text-left bg-[#111115] border-[#F8F8FA]/10 space-y-1.5 cursor-pointer">
+                  <div class="flex justify-between text-xs font-semibold text-[#F8F8FA]"><span>โรงพยาบาล / คลินิก</span><span class="text-[#EBDDFF] font-mono-tabular">40% SCOPE</span></div>
+                  <p class="text-[11px] text-[#A1A1AA]">เน้นการประเมิน วินิจฉัย รักษา และฟื้นฟูโดยบุคลากรทางการแพทย์</p>
+                </button>
+                <button type="button" onclick="selectMatrixTab('gym')" class="w-full p-3.5 rounded-xl border text-left bg-[#111115] border-[#F8F8FA]/10 space-y-1.5 cursor-pointer">
+                  <div class="flex justify-between text-xs font-semibold text-[#F8F8FA]"><span>ยิม / ฟิตเนส</span><span class="text-[#EBDDFF] font-mono-tabular">45% SCOPE</span></div>
+                  <p class="text-[11px] text-[#A1A1AA]">เน้นพื้นที่ อุปกรณ์ คลาส และโปรแกรมสำหรับการออกกำลังกาย</p>
+                </button>
+                <button type="button" onclick="selectMatrixTab('event')" class="w-full p-3.5 rounded-xl border text-left bg-[#111115] border-[#F8F8FA]/10 space-y-1.5 cursor-pointer">
+                  <div class="flex justify-between text-xs font-semibold text-[#F8F8FA]"><span>อีเวนต์กีฬา</span><span class="text-[#EBDDFF] font-mono-tabular">42% SCOPE</span></div>
+                  <p class="text-[11px] text-[#A1A1AA]">เน้นประสบการณ์ของกิจกรรมและการแข่งขันในช่วงเวลาของงาน</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         04 — 5-STAGE INTERACTIVE JOURNEY (02 · กระบวนการ 5 ขั้นตอนของ JAIKLA)
+    ===================================================================== -->
+    <section id="journey" class="relative py-24 lg:py-32 bg-[#111111] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-8">
+        <div>
+          <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF] mb-2" data-i18n="journey.kicker">02 · กระบวนการ 5 ขั้นตอนของ JAIKLA</p>
+          <h2 class="font-display jaikla-display-section font-bold text-[#F8F8FA] flex flex-wrap items-center gap-x-2.5 gap-y-1">
+            <span>เตรียมพร้อม</span><span class="text-[#7C3AED]">→</span>
+            <span>เคลื่อนไหว</span><span class="text-[#7C3AED]">→</span>
+            <span>พัฒนา</span><span class="text-[#7C3AED]">→</span>
+            <span>ฟื้นฟู</span><span class="text-[#7C3AED]">→</span>
+            <span>ต่อยอด</span>
+          </h2>
+          <p class="text-xs font-mono-tabular text-[#A1A1AA] mt-2" data-i18n="journey.trajectoryLabel">จากการเตรียมตัว สู่การเคลื่อนไหวที่ทำต่อได้</p>
+        </div>
+
+        <div id="journey-cards-container" class="grid grid-cols-1 md:grid-cols-5 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         05 — WHY JAIKLA (03 · ทำไมต้อง JAIKLA)
+    ===================================================================== -->
+    <section class="py-24 lg:py-32 bg-[#121212] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-12">
+        <div class="max-w-3xl space-y-3">
+          <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="whyJaikla.kicker">03 · ทำไมต้อง JAIKLA</p>
+          <h2 class="font-display jaikla-display-section font-bold text-[#F8F8FA]">
+            <span class="block" data-i18n="whyJaikla.headline1">เมื่อความรู้ที่เข้าใจร่างกาย</span>
+            <span class="block text-[#EBDDFF]" data-i18n="whyJaikla.headline2">ได้ทำงานร่วมกับประสบการณ์จริง</span>
+          </h2>
+          <p class="text-base sm:text-lg text-[#A1A1AA]" data-i18n="whyJaikla.lead">
+            สิ่งที่ JAIKLA ทำได้ดี คือการนำความรู้เรื่องร่างกายมาทำงานร่วมกับการออกแบบกิจกรรม โปรดักชัน คอนเทนต์ และคอมมูนิตี้ เพื่อให้ประสบการณ์สุขภาพเข้าถึงคนได้จริง
+          </p>
+        </div>
+
+        <div id="why-jaikla-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         06 — SOLUTIONS (04 · โซลูชันสำหรับผู้คนและองค์กร)
+    ===================================================================== -->
+    <section id="solutions" class="py-24 lg:py-32 bg-[#111111] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-12">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-3xl space-y-3">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="solutions.kicker">04 · โซลูชันสำหรับผู้คนและองค์กร</p>
+            <h2 class="font-display jaikla-display-section font-bold text-[#F8F8FA]">
+              <span class="block" data-i18n="solutions.headline1">ประสบการณ์สุขภาพและการเคลื่อนไหว</span>
+              <span class="block text-[#EBDDFF]" data-i18n="solutions.headline2">ที่ออกแบบให้เหมาะกับคนและองค์กร</span>
+            </h2>
+          </div>
+          <p class="text-sm sm:text-base text-[#A1A1AA] max-w-md" data-i18n="solutions.lead">
+            เราออกแบบบริการเป็น 5 รูปแบบ เพื่อให้เลือกและต่อยอดได้ตามเป้าหมายขององค์กร แบรนด์ คอมมูนิตี้ หรือกิจกรรมแต่ละประเภท
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div id="solutions-list" class="lg:col-span-5 flex flex-col gap-3"></div>
+          <div class="lg:col-span-7 rounded-2xl border border-[#F8F8FA]/12 bg-[#141418] p-6 sm:p-8 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <span id="sol-detail-index" class="text-xs font-mono-tabular text-[#EBDDFF]">SOLUTION 01 / 05</span>
+              <h3 id="sol-detail-title" class="font-display text-2xl sm:text-3xl font-bold text-[#F8F8FA]">สุขภาพและการเคลื่อนไหวสำหรับองค์กร</h3>
+              <p id="sol-detail-summary" class="text-sm sm:text-base text-[#F8F8FA]/90">
+                เปลี่ยนกิจกรรมสุขภาพขององค์กรให้ใกล้ชีวิตจริงมากขึ้น ตั้งแต่การขยับระหว่างวัน คลับวิ่ง ไปจนถึงกิจกรรมที่ช่วยให้คนในทีมได้ดูแลตัวเองและใช้เวลาร่วมกัน
+              </p>
+              <div class="pt-2">
+                <p class="text-[11px] font-mono-tabular text-[#EBDDFF] mb-3" data-i18n="solutions.modulesLabel">โปรแกรมและโมดูลหลัก</p>
+                <ul id="sol-detail-programs" class="space-y-2 text-xs sm:text-sm text-[#F8F8FA]"></ul>
+              </div>
+            </div>
+            <div class="pt-5 border-t border-[#F8F8FA]/10 space-y-4">
+              <div>
+                <p class="text-[11px] font-mono-tabular text-[#A1A1AA]" data-i18n="solutions.idealForLabel">เหมาะสำหรับ</p>
+                <p id="sol-detail-ideal" class="text-xs text-[#EBDDFF] mt-0.5">องค์กรชั้นนำ · ฝ่ายบริหารทรัพยากรบุคคล (HR) · ออฟฟิศและองค์กรยุคใหม่</p>
+              </div>
+              <button type="button" onclick="openInquiryModal('Corporate Wellness')" class="w-full jaikla-btn-primary py-3.5 px-5 rounded-xl text-xs font-semibold tracking-wider text-[#F8F8FA] cursor-pointer" data-i18n="solutions.inquireBtn">
+                คุยกับเราเรื่องโซลูชันนี้
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         07 — HUMAN PERFORMANCE (05 · เข้าใจการเคลื่อนไหวและการฟื้นตัว)
+    ===================================================================== -->
+    <section id="science" class="relative py-24 lg:py-32 bg-[#121212] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="performance.kicker">05 · เข้าใจการเคลื่อนไหวและการฟื้นตัว</p>
+            <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA]">
+              <span class="block" data-i18n="performance.h1">เข้าใจร่างกาย</span>
+              <span class="block text-[#EBDDFF]" data-i18n="performance.h2">ฟื้นตัวอย่างเข้าใจ</span>
+              <span class="block text-[#7C3AED]" data-i18n="performance.h3">พัฒนาได้อย่างต่อเนื่อง</span>
+            </h2>
+            <p class="text-lg sm:text-xl text-[#F8F8FA] font-medium" data-i18n="performance.lead">
+              การพัฒนาร่างกายไม่จำเป็นต้องเริ่มจากการทำให้หนักขึ้นเสมอไป หลายครั้งจุดเริ่มต้นที่สำคัญคือการรู้ว่าตอนนี้ร่างกายของเราพร้อมแค่ไหนและกำลังเคลื่อนไหวอย่างไร
+            </p>
+            <p class="text-sm sm:text-base text-[#A1A1AA]" data-i18n="performance.subLead">
+              มองทั้งการเตรียมตัว ระดับความหนัก การเคลื่อนไหว และการพักฟื้นให้สัมพันธ์กัน
+            </p>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden border border-[#F8F8FA]/12 aspect-[16/10] shadow-2xl">
+              <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_14.jpg" alt="Hands-On Allied Health Workshop" class="w-full h-full object-cover jaikla-photo-grade" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent"></div>
+              <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6">
+                <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">คำแนะนำจากผู้เชี่ยวชาญ · วิทยาศาสตร์การฟื้นฟู</p>
+                <p class="text-base sm:text-lg font-semibold text-[#F8F8FA]">การถ่ายทอดความรู้และเทคนิคการดูแลร่างกายเชิงปฏิบัติ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Telemetry Cards -->
+        <div id="telemetry-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         08 — EXPERT GUIDANCE (06 · องค์ความรู้เบื้องหลังทุกการเคลื่อนไหว)
+    ===================================================================== -->
+    <section class="py-24 lg:py-32 bg-[#111111] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-12">
+        <div class="space-y-3 max-w-2xl">
+          <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="expert.kicker">06 · องค์ความรู้เบื้องหลังทุกการเคลื่อนไหว</p>
+          <h2 class="font-display jaikla-display-section font-bold text-[#F8F8FA]">
+            <span class="block" data-i18n="expert.h1">ความรู้ที่นำไปใช้ได้จริง</span>
+            <span class="block text-[#EBDDFF]" data-i18n="expert.h2">เพื่อทุกการเคลื่อนไหว</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <div class="lg:col-span-4 rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between">
+            <div class="relative aspect-[4/5] w-full overflow-hidden">
+              <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_07.jpg" alt="Biomechanical Alignment Coaching" class="w-full h-full object-cover jaikla-photo-grade" />
+            </div>
+            <div class="p-6 space-y-2 bg-[#131318] border-t border-[#F8F8FA]/10">
+              <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">การโค้ชโดยผู้เชี่ยวชาญ · ชีวกลศาสตร์การเคลื่อนไหว</p>
+              <h3 class="font-display text-xl font-bold text-[#F8F8FA]">การปรับท่าทางและกลไกการเคลื่อนไหวโดยผู้เชี่ยวชาญ</h3>
+              <p class="text-xs text-[#A1A1AA] leading-relaxed">
+                ดูแลและแนะนำท่าทางการเคลื่อนไหวอย่างใกล้ชิด เพื่อให้ผู้เข้าร่วมเข้าใจร่างกายและขยับได้อย่างมั่นใจ
+              </p>
+            </div>
+          </div>
+
+          <div id="expert-pillars-grid" class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+
+        <div class="p-4 sm:px-6 rounded-xl bg-[#16161B] border border-[#F8F8FA]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#A1A1AA]">
+          <p>
+            <strong class="text-[#F8F8FA] font-medium" data-i18n="expert.disclaimerTitle">ขอบเขตการให้บริการ:</strong>
+            <span data-i18n="expert.disclaimerBody">JAIKLA ACTIVE WELLNESS เน้นการให้ความรู้ การออกแบบกิจกรรม และการดูแลด้านการเคลื่อนไหวในบริบทสุขภาพและไลฟ์สไตล์ ไม่ใช่บริการตรวจวินิจฉัย รักษา หรือทดแทนคำแนะนำจากบุคลากรทางการแพทย์</span>
+          </p>
+          <span class="font-mono-tabular text-[#EBDDFF] whitespace-nowrap">EDUCATION · GUIDANCE · MOVEMENT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         09 — COMMUNITY (07 · คอมมูนิตี้ที่ชวนกันเคลื่อนไหว)
+    ===================================================================== -->
+    <section id="community" class="py-24 lg:py-32 bg-[#121212] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="community.kicker">07 · คอมมูนิตี้ที่ชวนกันเคลื่อนไหว</p>
+            <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA]">
+              <span class="block" data-i18n="community.h1">เคลื่อนไหวไปด้วยกัน</span>
+              <span class="block text-[#EBDDFF]" data-i18n="community.h2">เติบโตไปด้วยกัน</span>
+            </h2>
+            <p class="text-base sm:text-lg text-[#A1A1AA]" data-i18n="community.lead">
+              การดูแลตัวเองทำต่อได้ง่ายขึ้นเมื่อมีคนร่วมทาง เราจึงอยากสร้างคอมมูนิตี้ที่คนทุกวัยรู้สึกว่าเข้ามาเริ่มได้ ไม่ต้องเก่งก่อน และไม่ต้องแข่งขันกับใคร
+            </p>
+            <p class="text-sm sm:text-base text-[#A1A1AA]" data-i18n="community.subLead">
+              ตั้งแต่คลับวิ่ง คลับเดิน กลุ่มวัย 40+ ไปจนถึงคอมมูนิตี้ภายในองค์กร
+            </p>
+
+            <!-- Collapsible Community Ledger (Hidden by default, revealed on click) -->
+            <div class="pt-4 space-y-3">
+              <button type="button" onclick="toggleCommunityStats()" class="group inline-flex items-center gap-2.5 text-left py-1.5 px-3 -ml-3 rounded-lg hover:bg-[#1A1A24] transition-all cursor-pointer">
+                <span class="text-xs sm:text-sm font-mono-tabular font-semibold text-[#EBDDFF] underline decoration-[#7C3AED] decoration-2 underline-offset-4" data-i18n="community.ledgerLabel">
+                  ดูภาพรวมคอมมูนิตี้
+                </span>
+                <span id="community-stats-hint" class="text-[11px] text-[#A1A1AA]">(กดที่หัวข้อเพื่อแสดงสถิติของคอมมูนิตี้)</span>
+              </button>
+
+              <div id="community-stats-grid" class="hidden grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                <div class="p-4 rounded-xl bg-[#16161C] border border-[#7C3AED]/40">
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">กิจกรรม</p>
+                  <p class="font-mono-tabular text-2xl sm:text-3xl font-bold text-[#F8F8FA] my-1.5">24</p>
+                  <p class="text-[11px] text-[#A1A1AA]">กิจกรรมการเคลื่อนไหว</p>
+                  <p class="text-[10px] font-mono-tabular text-[#A1A1AA]/70 mt-0.5">รูปแบบโปรแกรมพร้อมใช้งาน</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[#16161C] border border-[#7C3AED]/40">
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">ผู้เข้าร่วม</p>
+                  <p class="font-mono-tabular text-2xl sm:text-3xl font-bold text-[#F8F8FA] my-1.5">1,500+</p>
+                  <p class="text-[11px] text-[#A1A1AA]">ผู้เข้าร่วมประสบการณ์</p>
+                  <p class="text-[10px] font-mono-tabular text-[#A1A1AA]/70 mt-0.5">รองรับทุกขนาดกลุ่ม</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[#16161C] border border-[#7C3AED]/40">
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">คอมมูนิตี้</p>
+                  <p class="font-mono-tabular text-2xl sm:text-3xl font-bold text-[#F8F8FA] my-1.5">08</p>
+                  <p class="text-[11px] text-[#A1A1AA]">กลุ่มคอมมูนิตี้</p>
+                  <p class="text-[10px] font-mono-tabular text-[#A1A1AA]/70 mt-0.5">คลับและกลุ่มย่อย</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[#16161C] border border-[#7C3AED]/40">
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">พาร์ทเนอร์</p>
+                  <p class="font-mono-tabular text-2xl sm:text-3xl font-bold text-[#F8F8FA] my-1.5">12</p>
+                  <p class="text-[11px] text-[#A1A1AA]">พันธมิตรและองค์กร</p>
+                  <p class="text-[10px] font-mono-tabular text-[#A1A1AA]/70 mt-0.5">ความร่วมมือธุรกิจ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 space-y-5">
+              <button type="button" onclick="openInquiryModal('Community')" class="jaikla-btn-primary px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] inline-flex items-center gap-2.5 cursor-pointer">
+                <span data-i18n="community.joinCta">เข้าร่วมคอมมูนิตี้กับเรา</span>
+                <span>→</span>
+              </button>
+
+              <!-- Official Social Media Follow Channels -->
+              <div class="p-4 sm:p-5 rounded-2xl bg-[#15151C] border border-[#F8F8FA]/12 space-y-3.5">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF] tracking-wider uppercase">ช่องทางโซเชียลมีเดียและ LINE OA</p>
+                  <span class="text-[10px] font-mono-tabular text-[#A1A1AA]">@JaiklaActiveWellness</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <a href="https://www.facebook.com/JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-3 p-3 rounded-xl bg-[#1A1A23] hover:bg-[#4B1FD6]/25 border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-[#4B1FD6]/25 group-hover:bg-[#4B1FD6] border border-[#7C3AED]/40 flex items-center justify-center text-[#EBDDFF] group-hover:text-[#F8F8FA] transition-colors shrink-0">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-xs font-semibold text-[#F8F8FA]">Facebook</p>
+                        <p class="text-[11px] text-[#A1A1AA] group-hover:text-[#EBDDFF] truncate transition-colors">ติดตามข่าวสารและบทความสุขภาพ</p>
+                      </div>
+                    </div>
+                    <span class="text-xs text-[#A1A1AA] group-hover:text-[#EBDDFF] shrink-0">↗</span>
+                  </a>
+
+                  <a href="https://www.tiktok.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-3 p-3 rounded-xl bg-[#1A1A23] hover:bg-[#4B1FD6]/25 border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-[#4B1FD6]/25 group-hover:bg-[#4B1FD6] border border-[#7C3AED]/40 flex items-center justify-center text-[#EBDDFF] group-hover:text-[#F8F8FA] transition-colors shrink-0">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-xs font-semibold text-[#F8F8FA]">TikTok</p>
+                        <p class="text-[11px] text-[#A1A1AA] group-hover:text-[#EBDDFF] truncate transition-colors">รับชมคลิปเทคนิคการเคลื่อนไหว</p>
+                      </div>
+                    </div>
+                    <span class="text-xs text-[#A1A1AA] group-hover:text-[#EBDDFF] shrink-0">↗</span>
+                  </a>
+
+                  <a href="https://www.instagram.com/jaiklaactivewellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-3 p-3 rounded-xl bg-[#1A1A23] hover:bg-[#4B1FD6]/25 border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-[#4B1FD6]/25 group-hover:bg-[#4B1FD6] border border-[#7C3AED]/40 flex items-center justify-center text-[#EBDDFF] group-hover:text-[#F8F8FA] transition-colors shrink-0">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-xs font-semibold text-[#F8F8FA]">Instagram</p>
+                        <p class="text-[11px] text-[#A1A1AA] group-hover:text-[#EBDDFF] truncate transition-colors">อัปเดตภาพกิจกรรมและคอมมูนิตี้</p>
+                      </div>
+                    </div>
+                    <span class="text-xs text-[#A1A1AA] group-hover:text-[#EBDDFF] shrink-0">↗</span>
+                  </a>
+
+                  <a href="https://www.youtube.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-3 p-3 rounded-xl bg-[#1A1A23] hover:bg-[#4B1FD6]/25 border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-[#4B1FD6]/25 group-hover:bg-[#4B1FD6] border border-[#7C3AED]/40 flex items-center justify-center text-[#EBDDFF] group-hover:text-[#F8F8FA] transition-colors shrink-0">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-xs font-semibold text-[#F8F8FA]">YouTube</p>
+                        <p class="text-[11px] text-[#A1A1AA] group-hover:text-[#EBDDFF] truncate transition-colors">รับชมวิดีโอเทคนิคและการเคลื่อนไหว</p>
+                      </div>
+                    </div>
+                    <span class="text-xs text-[#A1A1AA] group-hover:text-[#EBDDFF] shrink-0">↗</span>
+                  </a>
+
+                  <a href="https://lin.ee/YEfyYwy" target="_blank" rel="noopener noreferrer" class="sm:col-span-2 group flex items-center justify-between gap-3 p-3 rounded-xl bg-[#1A1A23] hover:bg-[#4B1FD6]/25 border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-200">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-lg bg-[#4B1FD6]/25 group-hover:bg-[#4B1FD6] border border-[#7C3AED]/40 flex items-center justify-center text-[#EBDDFF] group-hover:text-[#F8F8FA] transition-colors shrink-0">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-xs font-semibold text-[#F8F8FA] flex items-center gap-1.5">
+                          <span>LINE Official</span>
+                          <span class="text-[9px] font-mono-tabular px-1.5 py-0.5 rounded bg-[#4B1FD6]/40 text-[#EBDDFF] border border-[#7C3AED]/30">LINE OA</span>
+                        </p>
+                        <p class="text-[11px] text-[#A1A1AA] group-hover:text-[#EBDDFF] truncate transition-colors">เพิ่มเพื่อน LINE OA เพื่อรับข่าวสารและสอบถาม</p>
+                      </div>
+                    </div>
+                    <span class="text-xs text-[#A1A1AA] group-hover:text-[#EBDDFF] shrink-0">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-12 gap-4 items-stretch">
+            <div class="col-span-7 rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between">
+              <div class="relative aspect-[4/5] w-full overflow-hidden flex-1">
+                <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_11.jpg" alt="Run & Trail Community" class="w-full h-full object-cover jaikla-photo-grade" />
+              </div>
+              <div class="p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">คอมมูนิตี้วิ่งและเทรล</p>
+                <p class="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5">พลังของการเคลื่อนไหวร่วมกันในคอมมูนิตี้</p>
+              </div>
+            </div>
+            <div class="col-span-5 flex flex-col justify-between gap-4">
+              <div class="rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between flex-1">
+                <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_03.jpg" alt="Active 40+" class="w-full h-40 object-cover jaikla-photo-grade" />
+                <div class="p-3.5 bg-[#131318] border-t border-[#F8F8FA]/10">
+                  <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">คลับสุขภาพวัย 40+</p>
+                  <p class="text-xs font-medium text-[#F8F8FA] mt-0.5">คอมมูนิตี้การเคลื่อนไหวสำหรับทุกช่วงวัย</p>
+                </div>
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between flex-1">
+                <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/campaign/campaign_05.jpg" alt="Myofascial Reset" class="w-full h-40 object-cover jaikla-photo-grade" />
+                <div class="p-3.5 bg-[#131318] border-t border-[#F8F8FA]/10">
+                  <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">การคลายพังผืดกล้ามเนื้อ</p>
+                  <p class="text-xs font-medium text-[#F8F8FA] mt-0.5">การคลายกล้ามเนื้อและพังผืดหลังการฝึกซ้อม</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         10 & 11 — PARTNER & BUSINESS FLYWHEEL (08 & 09)
+    ===================================================================== -->
+    <section id="partner" class="py-24 lg:py-32 bg-[#111111] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 space-y-24">
+        <div class="space-y-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-7 space-y-3">
+              <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="partner.kicker">08 · สำหรับองค์กร แบรนด์ และพื้นที่ไลฟ์สไตล์</p>
+              <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA]">
+                <span class="block" data-i18n="partner.h1">เปลี่ยนเรื่องสุขภาพ</span>
+                <span class="block text-[#7C3AED]" data-i18n="partner.h2">ให้กลายเป็นประสบการณ์ที่คนอยากมีส่วนร่วม</span>
+              </h2>
+            </div>
+            <div class="lg:col-span-5 space-y-2">
+              <p class="text-xs font-mono-tabular text-[#EBDDFF]" data-i18n="partner.builtForLabel">ออกแบบสำหรับ</p>
+              <p class="text-sm sm:text-base font-medium text-[#F8F8FA]" data-i18n="partner.builtForList">แบรนด์สินค้า · องค์กรขนาดใหญ่ · รีเทล · ศูนย์การค้า · คอมมูนิตี้กีฬา</p>
+              <p class="text-xs sm:text-sm text-[#A1A1AA]" data-i18n="partner.builtForSub">
+                เราทำงานร่วมกับองค์กรและแบรนด์ตั้งแต่การวางแนวคิด ไปจนถึงกิจกรรมจริง คอนเทนต์ และคอมมูนิตี้ เพื่อให้เรื่องสุขภาพเชื่อมกับเป้าหมายทางธุรกิจได้อย่างเป็นธรรมชาติ
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-10 rounded-2xl bg-[#15151B] border border-[#F8F8FA]/12 space-y-8">
+            <div id="partner-formula-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"></div>
+            <div class="p-6 rounded-xl bg-gradient-to-r from-[#4B1FD6]/25 via-[#5B1FA6]/30 to-[#141418] border border-[#7C3AED]/50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <span class="font-display text-3xl font-bold text-[#EBDDFF]">=</span>
+                <div>
+                  <p class="text-[11px] font-mono-tabular text-[#EBDDFF]" data-i18n="partner.deliverableKicker">สิ่งที่เราช่วยเชื่อมให้เกิดขึ้น</p>
+                  <h4 class="font-display text-xl sm:text-2xl font-extrabold text-[#F8F8FA]" data-i18n="partner.deliverableTitle">โซลูชันสุขภาพและการเคลื่อนไหวครบวงจร</h4>
+                </div>
+              </div>
+              <button type="button" onclick="openInquiryModal('Brand Activation')" class="jaikla-btn-primary px-6 py-3.5 rounded-xl text-xs font-semibold tracking-wider text-[#F8F8FA] whitespace-nowrap cursor-pointer" data-i18n="partner.coCreateCta">
+                มาคุยเรื่องโปรเจกต์ของคุณ
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 09 · Business Flywheel -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center pt-6">
+          <div class="lg:col-span-5 flex items-center justify-center">
+            <div class="p-6 rounded-3xl bg-[#14141C] border border-[#7C3AED]/35 text-center space-y-4 w-full max-w-[440px]">
+              <p class="text-xs font-mono-tabular text-[#EBDDFF]">ความเชี่ยวชาญ · เติบโตไปด้วยกัน</p>
+              <div id="flywheel-buttons-circle" class="grid grid-cols-1 gap-2"></div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="partner.flywheelKicker">09 · จากความเชี่ยวชาญสู่ความร่วมมือระยะยาว</p>
+            <h3 class="font-display jaikla-display-section font-bold text-[#F8F8FA]">
+              <span class="block" data-i18n="partner.flywheelH1">เริ่มจากสิ่งที่เราเชี่ยวชาญ</span>
+              <span class="block" data-i18n="partner.flywheelH2">แล้วเติบโตไปพร้อมกับพาร์ทเนอร์</span>
+            </h3>
+            <p class="text-sm sm:text-base text-[#F8F8FA]/90 leading-relaxed" data-i18n="partner.flywheelLead">
+              เราเริ่มจากสิ่งที่ทีมถนัดจริง ทั้งความรู้เรื่องการเคลื่อนไหว ประสบการณ์หน้างาน โปรดักชัน และคอนเทนต์ แล้วนำทั้งหมดมาประกอบเป็นโปรเจกต์ที่เหมาะกับเป้าหมายของแต่ละพาร์ทเนอร์ ไม่ว่าจะเป็นการดูแลคนในองค์กร การสร้างประสบการณ์ให้ลูกค้า หรือการพัฒนาคอมมูนิตี้ในระยะยาว
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="p-4 rounded-xl bg-[#15151C] border border-[#F8F8FA]/10 space-y-1.5">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">01 · รากฐานความเชี่ยวชาญ</p>
+                <p class="text-xs text-[#F8F8FA]/90 leading-relaxed">ต่อยอดจากความรู้เรื่องการเคลื่อนไหว ประสบการณ์หน้างาน และบริการที่เชื่อมกันได้ตั้งแต่ต้นจนจบ</p>
+              </div>
+              <div class="p-4 rounded-xl bg-[#15151C] border border-[#F8F8FA]/10 space-y-1.5">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">02 · การทำงานร่วมกันในระยะยาว</p>
+                <p class="text-xs text-[#F8F8FA]/90 leading-relaxed">วางโครงสร้างการทำงานที่ชัดเจน เพื่อให้พาร์ทเนอร์ต่อยอดโปรเจกต์และพัฒนาความร่วมมือได้ต่อเนื่อง</p>
+              </div>
+              <div class="p-4 rounded-xl bg-[#181528] border border-[#7C3AED]/45 space-y-1.5">
+                <p class="text-[10px] font-mono-tabular text-[#EBDDFF]">03 · ออกแบบให้เหมาะกับแต่ละองค์กร</p>
+                <p class="text-xs text-[#EBDDFF] leading-relaxed">ออกแบบกิจกรรมสุขภาพ การเคลื่อนไหว และการฟื้นตัวให้เหมาะกับทั้งคนในองค์กรและลูกค้าของแบรนด์</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-[#16161D] border border-[#7C3AED] space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono-tabular text-[#EBDDFF]">
+                <span id="flywheel-active-tag">STAGE 01 / 07 · องค์ความรู้เฉพาะทาง</span>
+                <span data-i18n="partner.inspectNodeHint">เลือกแต่ละหัวข้อเพื่อดูว่าเราสามารถทำงานร่วมกันอย่างไร</span>
+              </div>
+              <h4 id="flywheel-active-headline" class="font-display text-xl sm:text-2xl font-bold text-[#F8F8FA]">องค์ความรู้และประสบการณ์เฉพาะทาง</h4>
+              <p id="flywheel-active-desc" class="text-sm text-[#F8F8FA]/90 leading-relaxed">
+                ต่อยอดจากความรู้เรื่องการเคลื่อนไหวและประสบการณ์ลงพื้นที่จริงของทีม เพื่อออกแบบกิจกรรมที่ทั้งเข้าใจง่ายและใช้งานได้จริง
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         12 — FINAL CTA
+    ===================================================================== -->
+    <section id="contact" class="relative py-28 lg:py-36 bg-[#111111] overflow-hidden">
+      <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[780px] h-[420px] rounded-full bg-gradient-to-tr from-[#4B1FD6]/25 via-[#5B1FA6]/20 to-[#7C3AED]/15 blur-[140px]" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-10 text-center space-y-8">
+        <p class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF]" data-i18n="finalCta.kicker">ความรู้สุขภาพ × การเคลื่อนไหว × ประสบการณ์</p>
+        <h2 class="font-display jaikla-display-hero font-extrabold text-[#F8F8FA]">
+          <span class="block" data-i18n="finalCta.h1">มาสร้างการเปลี่ยนแปลง</span>
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#F8F8FA] via-[#EBDDFF] to-[#7C3AED]" data-i18n="finalCta.h2">ผ่านการเคลื่อนไหวไปด้วยกัน</span>
+        </h2>
+        <div class="max-w-2xl mx-auto space-y-2.5">
+          <p class="text-lg sm:text-xl text-[#F8F8FA]/90" data-i18n="finalCta.lead">
+            ถ้าคุณมีโจทย์เรื่องสุขภาพ การเคลื่อนไหว หรือคอมมูนิตี้ เราอยากช่วยเปลี่ยนโจทย์นั้นให้กลายเป็นประสบการณ์ที่คนอยากเข้าร่วม
+          </p>
+          <p class="text-sm sm:text-base text-[#A1A1AA]" data-i18n="finalCta.subLead">
+            คุยกับทีม JAIKLA เพื่อร่วมออกแบบโปรเจกต์ที่เหมาะกับองค์กร แบรนด์ หรือคอมมูนิตี้ของคุณ
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <button type="button" onclick="openInquiryModal('Corporate Wellness')" class="jaikla-btn-primary px-8 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] cursor-pointer" data-i18n="finalCta.btnStart">เริ่มโปรเจกต์กับเรา</button>
+          <button type="button" onclick="openInquiryModal('Brand Activation')" class="px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] bg-[#17171D] hover:bg-[#22222B] border border-[#F8F8FA]/15 cursor-pointer" data-i18n="finalCta.btnPartner">ร่วมเป็นพาร์ทเนอร์</button>
+          <button type="button" onclick="openInquiryModal('Other')" class="px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#EBDDFF] border border-[#EBDDFF]/25 cursor-pointer" data-i18n="finalCta.btnContact">ติดต่อเรา</button>
+        </div>
+
+        <!-- Social Media Follow Bar in Final CTA -->
+        <div class="pt-6 max-w-3xl mx-auto space-y-3">
+          <p class="text-xs font-mono-tabular text-[#EBDDFF] tracking-wider uppercase">ช่องทางโซเชียลมีเดียและ LINE OA ติดตามข่าวสาร ความรู้การเคลื่อนไหว และกิจกรรมใหม่ๆ</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            <a href="https://www.facebook.com/JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl bg-[#16161E]/90 hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#EBDDFF]/60 text-xs sm:text-sm font-semibold text-[#F8F8FA] transition-all duration-200 shadow-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] group-hover:text-[#F8F8FA] shrink-0"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+              <span>Facebook</span>
+              <span class="text-[11px] text-[#A1A1AA] group-hover:text-[#F8F8FA]">↗</span>
+            </a>
+            <a href="https://www.tiktok.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl bg-[#16161E]/90 hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#EBDDFF]/60 text-xs sm:text-sm font-semibold text-[#F8F8FA] transition-all duration-200 shadow-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] group-hover:text-[#F8F8FA] shrink-0"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+              <span>TikTok</span>
+              <span class="text-[11px] text-[#A1A1AA] group-hover:text-[#F8F8FA]">↗</span>
+            </a>
+            <a href="https://www.instagram.com/jaiklaactivewellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl bg-[#16161E]/90 hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#EBDDFF]/60 text-xs sm:text-sm font-semibold text-[#F8F8FA] transition-all duration-200 shadow-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] group-hover:text-[#F8F8FA] shrink-0"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              <span>Instagram</span>
+              <span class="text-[11px] text-[#A1A1AA] group-hover:text-[#F8F8FA]">↗</span>
+            </a>
+            <a href="https://www.youtube.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl bg-[#16161E]/90 hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#EBDDFF]/60 text-xs sm:text-sm font-semibold text-[#F8F8FA] transition-all duration-200 shadow-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] group-hover:text-[#F8F8FA] shrink-0"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>YouTube</span>
+              <span class="text-[11px] text-[#A1A1AA] group-hover:text-[#F8F8FA]">↗</span>
+            </a>
+            <a href="https://lin.ee/YEfyYwy" target="_blank" rel="noopener noreferrer" class="col-span-2 sm:col-span-1 lg:col-span-1 group flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl bg-[#16161E]/90 hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#EBDDFF]/60 text-xs sm:text-sm font-semibold text-[#F8F8FA] transition-all duration-200 shadow-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] group-hover:text-[#F8F8FA] shrink-0"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+              <span>LINE Official</span>
+              <span class="text-[11px] text-[#A1A1AA] group-hover:text-[#F8F8FA]">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+  ===================================================================== -->
+  <footer class="bg-[#0D0D0F] border-t border-[#F8F8FA]/10 py-14 text-xs text-[#A1A1AA]">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-[#F8F8FA]/8">
+        <div class="md:col-span-6 space-y-3">
+          <p class="font-display text-sm font-bold tracking-wider text-[#F8F8FA]">JAIKLA ACTIVE WELLNESS</p>
+          <p class="text-xs text-[#A1A1AA] max-w-md leading-relaxed">
+            หน่วยธุรกิจด้านสุขภาพและการเคลื่อนไหวของ <strong class="text-[#F8F8FA] font-medium">บริษัท ใจกล้า ดิจิตอล จำกัด</strong> ออกแบบประสบการณ์ที่เชื่อมความรู้ การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้เข้าด้วยกัน
+          </p>
+          <div class="pt-3 space-y-2">
+            <p class="font-mono-tabular text-[10px] text-[#EBDDFF] uppercase tracking-wider">ช่องทางโซเชียลมีเดียและ LINE OA</p>
+            <!-- Single Horizontal Row of Platform Buttons -->
+            <div class="flex flex-nowrap items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+              <a href="https://www.facebook.com/JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.tiktok.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                <span>TikTok</span>
+              </a>
+              <a href="https://www.instagram.com/jaiklaactivewellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.youtube.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span>YouTube</span>
+              </a>
+              <a href="https://lin.ee/YEfyYwy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-[#16161D] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 hover:border-[#7C3AED] text-xs font-medium text-[#F8F8FA] transition-all whitespace-nowrap shrink-0 shadow-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#EBDDFF] shrink-0" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                <span>LINE Official</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-6 md:text-right space-y-1.5">
+          <p class="text-[#F8F8FA]/90 font-medium">JAIKLA DIGITAL CO., LTD.</p>
+          <p>Bangkok, Thailand · <span class="text-[#EBDDFF]">jaikladigital@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#A1A1AA]/75">
+        <p>© 2026 JAIKLA DIGITAL CO., LTD. All rights reserved.</p>
+        <p>KNOWLEDGE × MOVEMENT × EXPERIENCE</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       PROJECT INQUIRY MODAL
+  ===================================================================== -->
+  <div id="inquiry-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="w-full max-w-lg rounded-2xl bg-[#15151C] border border-[#7C3AED]/50 p-6 sm:p-8 space-y-5 shadow-2xl">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="font-display text-2xl font-bold text-[#F8F8FA]">เริ่มโปรเจกต์กับเรา</h3>
+          <p class="text-xs sm:text-sm text-[#A1A1AA] mt-1">เล่าโจทย์ของคุณให้เราฟัง แล้วมาช่วยกันออกแบบรูปแบบที่เหมาะกับคนและเป้าหมายของโปรเจกต์</p>
+        </div>
+        <button type="button" onclick="closeInquiryModal()" class="text-[#A1A1AA] hover:text-[#F8F8FA] text-lg cursor-pointer">✕</button>
+      </div>
+      <form onsubmit="submitInquiryForm(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs text-[#EBDDFF] mb-1">ชื่อผู้ติดต่อ *</label>
+          <input type="text" required class="jaikla-input-field text-sm" placeholder="ชื่อ - นามสกุล" />
+        </div>
+        <div>
+          <label class="block text-xs text-[#EBDDFF] mb-1">ชื่อองค์กร / แบรนด์ *</label>
+          <input type="text" required class="jaikla-input-field text-sm" placeholder="ชื่อบริษัท / แบรนด์ / คอมมูนิตี้" />
+        </div>
+        <div>
+          <label class="block text-xs text-[#EBDDFF] mb-1">อีเมล หรือ เบอร์โทรศัพท์ *</label>
+          <input type="text" required class="jaikla-input-field text-sm" placeholder="name@company.com หรือ 08X-XXX-XXXX" />
+        </div>
+        <div>
+          <label class="block text-xs text-[#EBDDFF] mb-1">รูปแบบโปรเจกต์ที่สนใจ *</label>
+          <select id="modal-project-type" class="jaikla-input-field text-sm">
+            <option value="Corporate Wellness">สุขภาพและการเคลื่อนไหวสำหรับองค์กร (Corporate Wellness)</option>
+            <option value="Brand Activation">แคมเปญและประสบการณ์สำหรับแบรนด์ (Brand Activation)</option>
+            <option value="Community">คอมมูนิตี้สำหรับคนที่อยากขยับมากขึ้น (Community)</option>
+            <option value="Workshop">เวิร์กชอปที่ช่วยให้เข้าใจร่างกาย (Workshop)</option>
+            <option value="Sport Event">อีเวนต์กีฬาและกิจกรรมสุขภาพ (Sport Event)</option>
+            <option value="Other">อื่นๆ (Other)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs text-[#A1A1AA] mb-1">เล่าโจทย์หรือเป้าหมายของโปรเจกต์ (ถ้ามี)</label>
+          <textarea rows="3" class="jaikla-input-field text-sm" placeholder="รายละเอียดเบื้องต้น กลุ่มเป้าหมาย หรือช่วงเวลาที่สนใจ..."></textarea>
+        </div>
+        <div class="pt-3 border-t border-[#F8F8FA]/10 space-y-2">
+          <p class="text-[11px] font-mono-tabular text-[#EBDDFF]">หรือติดต่อและติดตามข่าวสารผ่านโซเชียลมีเดียและ LINE OA</p>
+          <div class="grid grid-cols-2 gap-2">
+            <a href="https://www.facebook.com/JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2 px-3 rounded-lg bg-[#1A1A24] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 text-xs font-semibold text-[#F8F8FA] transition-colors">Facebook</a>
+            <a href="https://www.tiktok.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2 px-3 rounded-lg bg-[#1A1A24] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 text-xs font-semibold text-[#F8F8FA] transition-colors">TikTok</a>
+            <a href="https://www.instagram.com/jaiklaactivewellness" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2 px-3 rounded-lg bg-[#1A1A24] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 text-xs font-semibold text-[#F8F8FA] transition-colors">Instagram</a>
+            <a href="https://www.youtube.com/@JaiklaActiveWellness" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2 px-3 rounded-lg bg-[#1A1A24] hover:bg-[#4B1FD6] border border-[#F8F8FA]/12 text-xs font-semibold text-[#F8F8FA] transition-colors">YouTube</a>
+            <a href="https://lin.ee/YEfyYwy" target="_blank" rel="noopener noreferrer" class="col-span-2 flex items-center justify-center py-2 px-3 rounded-lg bg-[#1A1A24] hover:bg-[#4B1FD6] border border-[#7C3AED]/45 text-xs font-semibold text-[#F8F8FA] transition-colors">LINE Official</a>
+          </div>
+        </div>
+        <div id="modal-thankyou" class="hidden p-4 rounded-xl bg-[#4B1FD6]/25 border border-[#7C3AED] text-xs text-[#EBDDFF]">
+          <strong>ขอบคุณที่สนใจร่วมงานกับเรา</strong> — เราได้รับข้อมูลแล้ว ทีมงานจะติดต่อกลับเพื่อพูดคุยรายละเอียดและทำความเข้าใจโจทย์ของคุณ
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" onclick="closeInquiryModal()" class="px-5 py-2.5 rounded-xl bg-[#22222A] text-xs font-semibold text-[#A1A1AA] hover:text-[#F8F8FA] cursor-pointer">ยกเลิก</button>
+          <button type="submit" class="jaikla-btn-primary px-6 py-2.5 rounded-xl text-xs font-semibold text-[#F8F8FA] cursor-pointer">ส่งข้อมูลให้ทีมงาน</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       APPLICATION DATA & INTERACTIVE SCRIPTS
+  ===================================================================== -->
+  <script>
+    // 1. Field Activity 13 Photos Data
+    const FIELD_ITEMS = [
+      { idx: '01', driveId: '1G61_azDLTGEQItdjXTf2B9ajtE766GeA', tag: 'การคลายกล้ามเนื้อเชิงลึก', title: 'ดูแลกล้ามเนื้อขาหลังจบกิจกรรม', desc: 'หลังเข้าเส้นชัย ทีมงานช่วยดูแลความตึงล้าของกล้ามเนื้อขา เพื่อให้ผู้เข้าร่วมได้ผ่อนคลายและสังเกตสภาพร่างกายของตัวเองก่อนกลับไปพัก' },
+      { idx: '02', driveId: '1ulExGyZ8OKhw-nh-m2rUQfVYE2eLtC8w', tag: 'การดูแลน่องและเอ็นร้อยหวาย', title: 'ดูแลกล้ามเนื้อน่องและบริเวณเอ็นร้อยหวาย', desc: 'ดูแลบริเวณน่องและเอ็นร้อยหวาย ซึ่งเป็นส่วนที่ทำงานหนักระหว่างการวิ่ง พร้อมแนะนำการพักและการดูแลตัวเองหลังจบกิจกรรม' },
+      { idx: '03', driveId: '1RyWF6vKwFkA5NSfTmQhIK__q_oOWZQZt', tag: 'การประเมินรายบุคคล', title: 'ดูแลนักวิ่งแบบรายบุคคลหลังจบกิจกรรม', desc: 'เริ่มจากการพูดคุยถึงความรู้สึกตึงล้าและลักษณะการใช้งานร่างกาย ก่อนเลือกวิธีดูแลที่เหมาะกับแต่ละคน' },
+      { idx: '04', driveId: '1Bh6QNrSHg7rB6-kv4lIjcZDS0DlcYD7j', tag: 'การคลายจุดตึงตัว', title: 'สำรวจความตึงล้าและดูแลกล้ามเนื้อ', desc: 'สำรวจบริเวณที่รู้สึกตึงหรือเมื่อยล้า แล้วดูแลกล้ามเนื้ออย่างเหมาะสมกับสภาพของผู้เข้าร่วมแต่ละคน' },
+      { idx: '05', driveId: '16oS_vUU0xosuzsBPWUKywmO96RkwHkag', tag: 'โซนฟื้นฟูหลังเส้นชัย', title: 'พื้นที่ฟื้นตัวหลังจบกิจกรรมที่เป็นกันเอง', desc: 'เราอยากให้โซนหลังเส้นชัยเป็นพื้นที่ที่ผู้เข้าร่วมได้พัก พูดคุย และดูแลร่างกายในบรรยากาศที่สบายและเป็นกันเอง' },
+      { idx: '06', driveId: '1ZaAzDCTQn45lpZLoBk33uKhbiNJtGupi', tag: 'การยืดเหยียดโดยผู้เชี่ยวชาญ', title: 'ยืดเหยียดและดูแลการเคลื่อนไหวของร่างกายส่วนล่าง', desc: 'ใช้การยืดเหยียดโดยมีทีมงานคอยดูแล เพื่อช่วยให้ผู้เข้าร่วมค่อย ๆ ผ่อนคลายร่างกายส่วนล่างหลังการออกแรง' },
+      { idx: '07', driveId: '1vuVLKmRBSziPb9EqY_W5Myp1JyzvphUH', tag: 'การปรับสมดุลข้อต่อ', title: 'สำรวจช่วงการเคลื่อนไหวและดูแลกล้ามเนื้อ', desc: 'สำรวจช่วงการเคลื่อนไหวของเข่าและสะโพก พร้อมดูแลบริเวณที่รู้สึกตึง เพื่อให้ผู้เข้าร่วมเข้าใจสภาพร่างกายหลังจบกิจกรรมมากขึ้น' },
+      { idx: '08', driveId: '1Eer538qNnSlZ3lspDE_q0C4wovjTw9e9', tag: 'ประสบการณ์ผู้เข้าร่วม', title: 'ความผ่อนคลายและความมั่นใจหลังจบกิจกรรม', desc: 'รอยยิ้มและความรู้สึกสบายใจของผู้เข้าร่วม คือส่วนสำคัญของประสบการณ์ที่เราอยากสร้างในทุกกิจกรรม' },
+      { idx: '09', driveId: '1HT6Bg2Q0_C3ggXr_c-uO7vpwLEwUW7aK', tag: 'การฟื้นฟูกล้ามเนื้อต้นขา', title: 'ดูแลกล้ามเนื้อต้นขาด้านหน้าและสะโพก', desc: 'ดูแลกล้ามเนื้อต้นขาด้านหน้าและบริเวณสะโพก ซึ่งมักทำงานหนักในการวิ่งระยะไกลหรือเส้นทางที่มีความชัน' },
+      { idx: '10', driveId: '1DPzJWpK2aj1aj5oaxud6OFiGojLLyF7i', tag: 'การดูแลหลังวิ่งระยะไกล', title: 'ดูแลกล้ามเนื้อต้นขาด้านหลังและน่องหลังวิ่งระยะไกล', desc: 'ดูแลความตึงล้าของต้นขาด้านหลังและน่อง พร้อมแนะนำแนวทางพักและฟื้นตัวหลังการวิ่งระยะไกล' },
+      { idx: '11', driveId: '1NW5ssM3aSV2MA7LXH_3O9Qk0ykY41XpP', tag: 'ทีมผู้เชี่ยวชาญภาคสนาม', title: 'ดูแลนักวิ่งทั้งเทรลและถนนอย่างใกล้ชิด', desc: 'ไม่ว่าจะเป็นวิ่งถนนหรือเทรล เราออกแบบการดูแลหน้างานให้เหมาะกับลักษณะกิจกรรมและผู้เข้าร่วมแต่ละกลุ่ม' },
+      { idx: '12', driveId: '1FJBuMyvAU4BcfwhM8kiC1kmi4rI7SHOB', tag: 'ความคล่องตัวของข้อเท้า', title: 'ดูแลการเคลื่อนไหวของข้อเท้าและร่างกายส่วนล่าง', desc: 'ดูแลการเคลื่อนไหวของข้อเท้าและฝ่าเท้า พร้อมชวนผู้เข้าร่วมสังเกตการลงน้ำหนักของตัวเองก่อนกลับไปฝึกซ้อม' },
+      { idx: '13', driveId: '1WtJU0QJrsJLs0Pu4bucQpyauZ_pM-8xn', tag: 'มาตรฐานทีม JAIKLA', title: 'ทีมดูแลหน้างานที่พร้อมอยู่ข้างผู้เข้าร่วม', desc: 'นี่คือภาพการทำงานของ JAIKLA ACTIVE WELLNESS ที่นำความรู้เรื่องร่างกายมาผสานกับการดูแลผู้คนอย่างใกล้ชิดในพื้นที่จริง' }
+    ];
+
+    let currentFieldIdx = 0;
+    function renderFieldGallery() {
+      const item = FIELD_ITEMS[currentFieldIdx];
+      document.getElementById('field-active-img').src = `https://drive.google.com/thumbnail?id=${item.driveId}&sz=w1600`;
+      document.getElementById('field-active-index').textContent = `${item.idx} / 13`;
+      document.getElementById('field-active-tag').textContent = item.tag;
+      document.getElementById('field-active-title').textContent = item.title;
+      document.getElementById('field-active-desc').textContent = item.desc;
+
+      const grid = document.getElementById('field-thumbs-grid');
+      grid.innerHTML = FIELD_ITEMS.map((it, i) => `
+        <button type="button" onclick="selectFieldPhoto(${i})" class="relative rounded-xl overflow-hidden aspect-[4/3] border transition-all cursor-pointer ${i === currentFieldIdx ? 'border-[#7C3AED] ring-2 ring-[#7C3AED]' : 'border-[#F8F8FA]/10 opacity-70 hover:opacity-100'}">
+          <img src="https://drive.google.com/thumbnail?id=${it.driveId}&sz=w400" alt="${it.title}" class="w-full h-full object-cover" />
+          <span class="absolute bottom-1 right-1 text-[9px] font-mono-tabular bg-black/75 px-1.5 rounded text-[#EBDDFF]">${it.idx}</span>
+        </button>
+      `).join('');
+    }
+    function selectFieldPhoto(i) { currentFieldIdx = i; renderFieldGallery(); }
+    function stepFieldPhoto(dir) { currentFieldIdx = (currentFieldIdx + dir + FIELD_ITEMS.length) % FIELD_ITEMS.length; renderFieldGallery(); }
+
+    // 2. Positioning Matrix Data
+    const MATRIX_DATA = {
+      jaikla: {
+        title: 'JAIKLA ACTIVE WELLNESS',
+        subtitle: 'ประสบการณ์สุขภาพที่เชื่อมความรู้ กิจกรรม และคอมมูนิตี้',
+        focus: 'นำความรู้เรื่องร่างกายและการเคลื่อนไหวมาแปลงเป็นกิจกรรมที่เข้าใจง่าย เข้าร่วมได้ และนำกลับไปใช้ต่อในชีวิตประจำวัน',
+        atmosphere: 'เป็นกันเอง เข้าถึงง่าย และมีทีมงานคอยดูแลอย่างเหมาะสม เพื่อให้แต่ละคนได้ขยับในจังหวะของตัวเอง',
+        outcome: 'ผู้เข้าร่วมได้รู้จักร่างกายตัวเองมากขึ้น กล้าเคลื่อนไหวมากขึ้น และมีแนวทางดูแลตัวเองต่อหลังจบกิจกรรม'
+      },
+      clinical: {
+        title: 'โรงพยาบาล / คลินิกทางการแพทย์',
+        subtitle: 'การดูแลด้านสุขภาพโดยบุคลากรและระบบทางการแพทย์',
+        focus: 'มุ่งเน้นการประเมิน วินิจฉัย รักษา และฟื้นฟูภายใต้การดูแลของบุคลากรทางการแพทย์ตามความเหมาะสม',
+        atmosphere: 'มีระบบและมาตรฐานการดูแลทางการแพทย์ เหมาะกับผู้ที่ต้องการการประเมินหรือการรักษาเฉพาะด้าน',
+        outcome: 'ช่วยดูแลภาวะสุขภาพหรือการบาดเจ็บตามข้อบ่งชี้และขอบเขตวิชาชีพของบุคลากรทางการแพทย์'
+      },
+      gym: {
+        title: 'ยิมและฟิตเนสรูปแบบเดิม',
+        subtitle: 'พื้นที่และโปรแกรมสำหรับการออกกำลังกายและฝึกซ้อม',
+        focus: 'เน้นพื้นที่ อุปกรณ์ คลาส และโปรแกรมฝึก เพื่อให้สมาชิกออกกำลังกายตามเป้าหมายของตนเอง',
+        atmosphere: 'มีรูปแบบตั้งแต่การฝึกด้วยตัวเองไปจนถึงคลาสและการดูแลโดยผู้ฝึกสอน ขึ้นอยู่กับบริการของแต่ละแห่ง',
+        outcome: 'ช่วยให้ผู้ใช้เข้าถึงพื้นที่และรูปแบบการฝึกที่หลากหลาย เพื่อพัฒนาความฟิตตามเป้าหมายส่วนบุคคล'
+      },
+      event: {
+        title: 'ผู้จัดงานอีเวนต์กีฬาทั่วไป',
+        subtitle: 'ประสบการณ์กิจกรรมและการแข่งขันในช่วงเวลาของงาน',
+        focus: 'มุ่งออกแบบและบริหารประสบการณ์ของกิจกรรมหรือการแข่งขัน ตั้งแต่การเตรียมงานจนถึงการดูแลผู้เข้าร่วมในวันจริง',
+        atmosphere: 'สร้างบรรยากาศ การมีส่วนร่วม และความประทับใจร่วมกันในช่วงเวลาของกิจกรรม',
+        outcome: 'มอบประสบการณ์และความทรงจำจากกิจกรรม โดยรูปแบบการดูแลก่อนและหลังงานจะแตกต่างกันไปตามผู้จัดแต่ละราย'
+      }
+    };
+    function selectMatrixTab(key) {
+      const d = MATRIX_DATA[key];
+      document.getElementById('matrix-card-title').textContent = d.title;
+      document.getElementById('matrix-card-subtitle').textContent = d.subtitle;
+      document.getElementById('matrix-card-focus').textContent = d.focus;
+      document.getElementById('matrix-card-atmosphere').textContent = d.atmosphere;
+      document.getElementById('matrix-card-outcome').textContent = d.outcome;
+      ['jaikla', 'clinical', 'gym', 'event'].forEach(k => {
+        const btn = document.getElementById('matrix-tab-' + k);
+        if (btn) {
+          btn.className = k === key
+            ? 'px-4 py-2 rounded-lg text-xs font-medium cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]'
+            : 'px-4 py-2 rounded-lg text-xs font-medium cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]';
+        }
+      });
+    }
+
+    // 3. 5-Stage Journey Data
+    const JOURNEY_DATA = [
+      { idx: '01', name: 'เตรียมพร้อม', sub: 'เตรียมตัวให้พร้อม', headline: 'รู้จักความพร้อมของร่างกาย ก่อนเริ่มเคลื่อนไหว', desc: 'เริ่มจากชวนผู้เข้าร่วมสังเกตความพร้อมของตัวเอง ทั้งการเคลื่อนไหว ความยืดหยุ่น และความรู้สึกของร่างกาย ก่อนค่อย ๆ เตรียมตัวให้พร้อมสำหรับกิจกรรม', items: ['การประเมินความพร้อมของการเคลื่อนไหว', 'โปรแกรมเตรียมความคล่องตัวของข้อต่อ', 'การฝึกลมหายใจและแกนกลางลำตัว'] },
+      { idx: '02', name: 'เคลื่อนไหว', sub: 'ขยับอย่างมั่นใจ', headline: 'ขยับอย่างมั่นใจ ด้วยพื้นฐานที่เหมาะกับตัวเอง', desc: 'นำความเข้าใจนั้นมาใช้กับการเคลื่อนไหวจริง ให้แต่ละคนได้ขยับอย่างเป็นธรรมชาติและมั่นใจในระดับที่เหมาะกับตัวเอง', items: ['การจัดระเบียบท่าวิ่งและท่าเดิน', 'คลาสพื้นฐานการเคลื่อนไหวในชีวิตประจำวัน', 'การแบ่งกลุ่มความเร็วที่ทุกคนเข้าถึงได้'] },
+      { idx: '03', name: 'พัฒนา', sub: 'พัฒนาอย่างเป็นขั้นตอน', headline: 'ค่อย ๆ พัฒนาความแข็งแรง ความทนทาน และความสามารถของร่างกาย', desc: 'เมื่อมีพื้นฐานที่ดี เราค่อยต่อยอดความแข็งแรงและความทนทานด้วยกิจกรรมที่วางลำดับอย่างเหมาะสมกับกลุ่มผู้เข้าร่วม', items: ['กิจกรรมพัฒนาทักษะและสมรรถภาพตามเป้าหมาย', 'โปรแกรมสร้างความแข็งแรงและพลังกล้ามเนื้อ', 'การบริหารพลังงานและความทนทานระยะยาว'] },
+      { idx: '04', name: 'ฟื้นฟู', sub: 'ฟื้นตัวให้เหมาะกับตัวเอง', headline: 'ให้เวลาร่างกายฟื้นตัว เพื่อพร้อมสำหรับก้าวต่อไป', desc: 'การพักและฟื้นตัวเป็นส่วนหนึ่งของการพัฒนา เราจึงออกแบบช่วงหลังการเคลื่อนไหวให้ผู้เข้าร่วมได้ผ่อนคลาย สังเกตร่างกาย และเรียนรู้วิธีดูแลตัวเอง', items: ['โซนฟื้นฟูร่างกายหลังจบกิจกรรมและงานวิ่ง', 'เวิร์กชอปการคลายพังผืดและกล้ามเนื้อ', 'โปรแกรมรีเซ็ตร่างกายสำหรับคนทำงานออฟฟิศ'] },
+      { idx: '05', name: 'ต่อยอด', sub: 'ทำต่อให้เป็นส่วนหนึ่งของชีวิต', headline: 'เปลี่ยนการเคลื่อนไหวให้เป็นส่วนหนึ่งของชีวิตที่ทำต่อได้จริง', desc: 'เป้าหมายไม่ใช่ให้ทุกอย่างจบเมื่อกิจกรรมเลิก แต่ทำให้ความรู้ การเคลื่อนไหว คอมมูนิตี้ และคอนเทนต์ช่วยกันพาคนกลับมาดูแลตัวเองต่อเนื่อง', items: ['ระบบนิเวศสุขภาพประจำปีสำหรับองค์กร', 'การบริหารจัดการคลับวิ่งและคอมมูนิตี้ระยะยาว', 'สื่อการเรียนรู้และการติดตามพัฒนาการต่อเนื่อง'] }
+    ];
+
+    // 4. Why JAIKLA Data
+    const WHY_DATA = [
+      { idx: '01', title: 'ความรู้เรื่องร่างกายและการเคลื่อนไหว', sub: 'องค์ความรู้ด้านวิทยาศาสตร์สุขภาพและการเคลื่อนไหว', desc: 'ย่อยเรื่องสรีรวิทยาและการเคลื่อนไหวให้เข้าใจง่าย โดยยังรักษาความถูกต้องและนำไปใช้ในชีวิตประจำวันได้' },
+      { idx: '02', title: 'กีฬาและกิจกรรมการเคลื่อนไหว', sub: 'การออกแบบโปรแกรมกีฬาและกิจกรรมการเคลื่อนไหว', desc: 'ออกแบบกิจกรรมวิ่ง เดิน และฝึกความแข็งแรงให้เหมาะกับบริบทและระดับของผู้เข้าร่วม' },
+      { idx: '03', title: 'อีเวนต์และประสบการณ์', sub: 'การสร้างสรรค์อีเวนต์และประสบการณ์สุขภาพรูปแบบใหม่', desc: 'ดูแลประสบการณ์ตั้งแต่แนวคิด พื้นที่ และโปรดักชัน ไปจนถึงจังหวะการเข้าร่วมกิจกรรมหน้างาน' },
+      { idx: '04', title: 'คอนเทนต์และสื่อดิจิทัล', sub: 'การผลิตคอนเทนต์และสื่อดิจิทัลด้านสุขภาพยุคใหม่', desc: 'เปลี่ยนความรู้เรื่องสุขภาพและการเคลื่อนไหวให้เป็นคอนเทนต์ที่คนเข้าใจ อยากดู และนำไปใช้ต่อได้' },
+      { idx: '05', title: 'คอมมูนิตี้ที่ชวนกันขยับและเติบโต', sub: 'การสร้างคอมมูนิตี้ที่เติบโตและเคลื่อนไหวไปด้วยกัน', desc: 'สร้างพื้นที่ที่คนรู้สึกสบายใจที่จะเริ่ม เคลื่อนไหวในแบบของตัวเอง และกลับมาทำกิจกรรมร่วมกันได้เรื่อย ๆ' }
+    ];
+
+    // 5. Solutions Data
+    const SOLUTIONS_ITEMS = [
+      { idx: '01', title: 'สุขภาพและการเคลื่อนไหวสำหรับองค์กร', sub: 'ออกแบบกิจกรรมสุขภาพให้เข้ากับคนและวัฒนธรรมขององค์กร', summary: 'เปลี่ยนกิจกรรมสุขภาพขององค์กรให้ใกล้ชีวิตจริงมากขึ้น ตั้งแต่การขยับระหว่างวัน คลับวิ่ง ไปจนถึงกิจกรรมที่ช่วยให้คนในทีมได้ดูแลตัวเองและใช้เวลาร่วมกัน', programs: ['การออกแบบโครงสร้างสุขภาพพนักงานแบบองค์รวม', 'คลับวิ่งและการโค้ชการเคลื่อนไหวสำหรับองค์กร', 'โปรแกรมส่งเสริมการเคลื่อนไหวในที่ทำงาน', 'คลินิกปรับสมดุลร่างกายและคลายออฟฟิศซินโดรม', 'แคมเปญภารกิจสะสมสุขภาพดีภายในองค์กร'], ideal: 'องค์กรชั้นนำ · ฝ่ายบริหารทรัพยากรบุคคล (HR) · ออฟฟิศและองค์กรยุคใหม่' },
+      { idx: '02', title: 'แคมเปญและประสบการณ์สำหรับแบรนด์', sub: 'สร้าง Brand Experience ผ่านกิจกรรมที่คนได้ลงมือมีส่วนร่วม', summary: 'เชื่อมแบรนด์กับผู้คนผ่านกิจกรรมสุขภาพและการเคลื่อนไหวที่มีเหตุผลรองรับ เปิดโอกาสให้ผู้เข้าร่วมได้สัมผัสแบรนด์ผ่านประสบการณ์จริง', programs: ['กิจกรรมเปิดตัวและทดลองสินค้าผ่านการเคลื่อนไหวจริง', 'แคมเปญส่งเสริมสุขภาพและไลฟ์สไตล์แบบครบวงจร', 'กิจกรรมสร้างประสบการณ์ร่วมระหว่างแบรนด์และคอมมูนิตี้', 'การผลิตคอนเทนต์ความรู้สุขภาพร่วมกับทีมผู้เชี่ยวชาญ'], ideal: 'แบรนด์ชุดกีฬา · อาหารและเครื่องดื่มสุขภาพ · แบรนด์ไลฟ์สไตล์และยานยนต์ · สถาบันการเงิน' },
+      { idx: '03', title: 'คอมมูนิตี้สำหรับคนที่อยากขยับมากขึ้น', sub: 'ออกแบบและดูแลคอมมูนิตี้ที่ชวนให้คนกลับมาเคลื่อนไหวอย่างต่อเนื่อง', summary: 'สร้างพื้นที่ให้คนหลากหลายระดับได้มาเริ่มต้นและเคลื่อนไหวด้วยกัน ตั้งแต่มือใหม่ วัยทำงาน ไปจนถึงวัย 40+', programs: ['คลับวิ่ง JAIKLA Run Club สำหรับทุกระดับความฟิต', 'คลับเดินเพื่อสุขภาพและฝึกสมดุลการเคลื่อนไหวในเมือง', 'โปรแกรมดูแลความคล่องตัวและข้อต่อสำหรับวัย 40+', 'คลาสปูพื้นฐานการออกกำลังกายอย่างมั่นใจสำหรับผู้เริ่มต้น', 'กิจกรรมรวมกลุ่มคอมมูนิตี้คนรักกีฬาเฉพาะทาง'], ideal: 'คอมมูนิตี้เมือง · ศูนย์การค้าและพื้นที่รีเทล · โครงการอสังหาริมทรัพย์และมิกซ์ยูส' },
+      { idx: '04', title: 'เวิร์กชอปที่ช่วยให้เข้าใจร่างกาย', sub: 'เรียนรู้เรื่องร่างกายผ่านกิจกรรมที่เข้าใจง่ายและนำไปใช้ได้จริง', summary: 'เวิร์กชอปที่ชวนผู้เข้าร่วมเรียนรู้เรื่องร่างกายผ่านการลงมือทำ เพื่อกลับไปสังเกตและดูแลตัวเองในชีวิตประจำวันได้ดีขึ้น', programs: ['เวิร์กชอปวิเคราะห์โครงสร้างท่าทางและชีวกลศาสตร์ร่างกาย', 'การเรียนรู้โซนอัตราการเต้นหัวใจและการกะระดับความหนัก', 'การเตรียมความพร้อมข้อต่อและความยืดหยุ่นก่อนเคลื่อนไหว', 'เทคนิคการฟื้นฟูร่างกายและการคลายพังผืดกล้ามเนื้ออย่างถูกวิธี', 'การสร้างความแข็งแรงเชิงหน้าที่เพื่อรองรับชีวิตประจำวัน', 'ศาสตร์การวิ่งอย่างปลอดภัยและการป้องกันการบาดเจ็บ'], ideal: 'องค์กรและบริษัท · ชมรมวิ่งและกีฬา · สตูดิโอสุขภาพ · งานสัมมนาเชิงปฏิบัติการ' },
+      { idx: '05', title: 'อีเวนต์กีฬาและกิจกรรมสุขภาพ', sub: 'ออกแบบประสบการณ์กีฬาและสุขภาพตั้งแต่แนวคิดจนถึงหน้างาน', summary: 'ออกแบบอีเวนต์กีฬาและกิจกรรมสุขภาพให้เชื่อมต่อกันตั้งแต่ก่อนเริ่ม ระหว่างกิจกรรม จนถึงช่วงพักและดูแลร่างกายหลังจบงาน', programs: ['การออกแบบงานวิ่งและอีเวนต์กีฬาที่มีเอกลักษณ์เฉพาะตัว', 'เทศกาลสุขภาพและการฟื้นฟูร่างกายแบบครบวงจร', 'กีฬาสีและการแข่งขันสร้างทีมเวิร์กยุคใหม่สำหรับองค์กร', 'คลินิกพัฒนาทักษะและสมรรถภาพทางการกีฬาเฉพาะทาง', 'โซนดูแลและฟื้นฟูนักกีฬามาตรฐานมืออาชีพในงานแข่งขันขนาดใหญ่'], ideal: 'ผู้จัดงานและสปอนเซอร์ · ศูนย์การค้า · การท่องเที่ยวและเมือง · องค์กรขนาดใหญ่' }
+    ];
+    let activeSolIdx = 0;
+    function selectSolution(i) {
+      activeSolIdx = i;
+      const s = SOLUTIONS_ITEMS[i];
+      document.getElementById('sol-detail-index').textContent = `SOLUTION ${s.idx} / 05`;
+      document.getElementById('sol-detail-title').textContent = s.title;
+      document.getElementById('sol-detail-summary').textContent = s.summary;
+      document.getElementById('sol-detail-ideal').textContent = s.ideal;
+      document.getElementById('sol-detail-programs').innerHTML = s.programs.map(p => `<li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED]"></span><span>${p}</span></li>`).join('');
+      renderSolutionsList();
+    }
+    function renderSolutionsList() {
+      document.getElementById('solutions-list').innerHTML = SOLUTIONS_ITEMS.map((s, i) => `
+        <button type="button" onclick="selectSolution(${i})" class="w-full text-left p-5 rounded-2xl border transition-all cursor-pointer ${i === activeSolIdx ? 'bg-[#17171F] border-[#7C3AED] shadow-lg' : 'bg-[#141418] border-[#F8F8FA]/10 hover:border-[#7C3AED]/50'}">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono-tabular text-xs font-semibold text-[#7C3AED]">${s.idx}.</span>
+            <div>
+              <h3 class="font-display text-base sm:text-lg font-bold text-[#F8F8FA]">${s.title}</h3>
+              <p class="text-xs text-[#A1A1AA] mt-0.5">${s.sub}</p>
+            </div>
+          </div>
+        </button>
+      `).join('');
+    }
+
+    // 6. Telemetry Cards Data
+    const TELEMETRY_DATA = [
+      { tag: 'อัตราหัวใจ', title: 'จังหวะหัวใจและระดับความเหนื่อย', desc: 'สังเกตระดับความเหนื่อยและจังหวะการออกแรงที่เหมาะกับตัวเอง' },
+      { tag: 'การเคลื่อนไหว', title: 'จังหวะการก้าวและท่าทาง', desc: 'ความสมดุลของท่าทางและความลื่นไหลของการเคลื่อนไหว' },
+      { tag: 'การฟื้นตัว', title: 'การพักและฟื้นตัว', desc: 'การผ่อนคลายของร่างกายและกล้ามเนื้อหลังการออกแรง' },
+      { tag: 'ความคล่องตัว', title: 'ช่วงการเคลื่อนไหวของข้อต่อ', desc: 'ความคล่องตัวและความมั่นคงของข้อต่อในการเคลื่อนไหว' },
+      { tag: 'การพัฒนา', title: 'การค่อย ๆ เพิ่มความท้าทาย', desc: 'การปรับระดับกิจกรรมให้เหมาะกับความพร้อมของร่างกาย' }
+    ];
+
+    // 7. Expert Pillars Data
+    const EXPERT_PILLARS = [
+      { idx: '01', title: 'รู้จักและสังเกตร่างกาย', sub: 'การรับรู้และเข้าใจโครงสร้างร่างกาย', desc: 'ฝึกสังเกตสมดุลท่าทาง จังหวะการหายใจ และสัญญาณของร่างกายก่อนเริ่มฝึกหนัก' },
+      { idx: '02', title: 'การเตรียมความพร้อมก่อนเคลื่อนไหว', sub: 'การเตรียมความพร้อมก่อนเคลื่อนไหว', desc: 'เรียนรู้การวอร์มอัปและเตรียมร่างกายให้สอดคล้องกับกิจกรรมที่กำลังจะทำ' },
+      { idx: '03', title: 'ออกกำลังกายอย่างเข้าใจ', sub: 'ความรู้ในการออกกำลังกายอย่างมีหลักการ', desc: 'เข้าใจเหตุผลเบื้องหลังทุกท่าฝึก รู้จักการกะระดับความหนักที่เหมาะสมกับตนเอง' },
+      { idx: '04', title: 'การฟื้นตัวหลังการเคลื่อนไหว', sub: 'การพักและฟื้นตัวหลังการเคลื่อนไหว', desc: 'เรียนรู้วิธีผ่อนคลายกล้ามเนื้อ พัก และสังเกตความล้าหลังการเคลื่อนไหว' },
+      { idx: '05', title: 'ความคล่องตัวและช่วงการเคลื่อนไหว', sub: 'ความยืดหยุ่นและองศาการเคลื่อนไหวของข้อต่อ', desc: 'พัฒนาช่วงการเคลื่อนไหวของข้อต่อสำคัญ เพื่อให้ทุกก้าวมีความคล่องตัว' },
+      { idx: '06', title: 'ความแข็งแรงที่ใช้ได้ในชีวิตจริง', sub: 'ความแข็งแรงที่รองรับกิจกรรมในชีวิตจริง', desc: 'สร้างความแข็งแรงของกล้ามเนื้อและข้อต่อเพื่อรองรับแรงกระแทกในชีวิตจริงและกีฬา' }
+    ];
+
+    // 8. Partner Formula & Flywheel Data
+    const FORMULA_STEPS = [
+      { idx: '01', name: 'กลยุทธ์', sub: 'กลยุทธ์แคมเปญและข้อมูลเชิงลึก', detail: 'ทำความเข้าใจกลุ่มเป้าหมาย เป้าหมายของโปรเจกต์ และบทบาทที่แบรนด์ควรมีในประสบการณ์' },
+      { idx: '02', name: 'ผู้เชี่ยวชาญ', sub: 'ทีมผู้เชี่ยวชาญด้านการเคลื่อนไหว', detail: 'เชื่อมทีมผู้เชี่ยวชาญที่เหมาะกับเนื้อหาและรูปแบบกิจกรรมของแต่ละโปรเจกต์' },
+      { idx: '03', name: 'กิจกรรม', sub: 'โปรแกรมการเคลื่อนไหวและการฟื้นฟู', detail: 'ออกแบบเวิร์กชอป คลับวิ่ง กิจกรรมสำหรับคนทำงาน และพื้นที่ดูแลหลังการเคลื่อนไหว' },
+      { idx: '04', name: 'โปรดักชัน', sub: 'โปรดักชันและประสบการณ์หน้างาน', detail: 'ดูแลพื้นที่ แสง เสียง การผลิต และการเดินทางของผู้เข้าร่วมตลอดประสบการณ์หน้างาน' },
+      { idx: '05', name: 'คอนเทนต์', sub: 'คอนเทนต์และสื่อดิจิทัลครบวงจร', detail: 'ต่อยอดกิจกรรมเป็นวิดีโอ สื่อความรู้ และคอนเทนต์สำหรับช่องทางดิจิทัล' }
+    ];
+
+    const FLYWHEEL_ITEMS = [
+      { idx: '01', label: 'องค์ความรู้เฉพาะทาง', headline: 'องค์ความรู้และประสบการณ์เฉพาะทาง', desc: 'ต่อยอดจากความรู้เรื่องการเคลื่อนไหวและประสบการณ์ลงพื้นที่จริงของทีม เพื่อออกแบบกิจกรรมที่ทั้งเข้าใจง่ายและใช้งานได้จริง' },
+      { idx: '02', label: 'ใส่ใจผู้เข้าร่วม', headline: 'ใส่ใจประสบการณ์และผลลัพธ์ของผู้เข้าร่วม', desc: 'ให้ความสำคัญกับสิ่งที่ผู้เข้าร่วมได้รับจริง ทั้งความเข้าใจ ความรู้สึก และประสบการณ์ตั้งแต่ต้นจนจบ' },
+      { idx: '03', label: 'เชื่อมบริการ', headline: 'เชื่อมบริการหลายด้านให้ทำงานร่วมกัน', desc: 'เชื่อมเวิร์กชอป คอมมูนิตี้ กิจกรรมองค์กร โปรดักชันหน้างาน และสื่อดิจิทัลให้ทำงานร่วมกันตามโจทย์' },
+      { idx: '04', label: 'ร่วมมือระยะยาว', headline: 'สร้างความร่วมมือที่ต่อยอดได้ในระยะยาว', desc: 'วางระบบการทำงานที่ชัดเจน เพื่อให้พาร์ทเนอร์สามารถต่อยอดโปรเจกต์และพัฒนาความร่วมมือในระยะยาว' },
+      { idx: '05', label: 'ดูแลการเคลื่อนไหว', headline: 'ดูแลทั้งการเคลื่อนไหว การพัก และการฟื้นตัว', desc: 'ออกแบบประสบการณ์ให้มีทั้งช่วงเตรียมตัว การเคลื่อนไหว การพัก และการเรียนรู้วิธีดูแลตัวเองหลังจบกิจกรรม' },
+      { idx: '06', label: 'สร้างคุณค่าให้ผู้คน', headline: 'สร้างคุณค่าให้คนในองค์กรและลูกค้าของแบรนด์', desc: 'เหมาะกับองค์กรที่ต้องการสร้างกิจกรรมให้คนในทีม หรือแบรนด์ที่อยากสร้างประสบการณ์สุขภาพให้ลูกค้ามีส่วนร่วมจริง' },
+      { idx: '07', label: 'ออกแบบเฉพาะโจทย์', headline: 'ออกแบบกิจกรรมให้เข้ากับเป้าหมายของแต่ละพาร์ทเนอร์', desc: 'ร่วมคิดและออกแบบกิจกรรมเฉพาะให้สอดคล้องกับเป้าหมาย กลุ่มเป้าหมาย และบุคลิกของแต่ละองค์กรหรือแบรนด์' }
+    ];
+    let activeFlywheelIdx = 0;
+    function selectFlywheelNode(i) {
+      activeFlywheelIdx = i;
+      const n = FLYWHEEL_ITEMS[i];
+      document.getElementById('flywheel-active-tag').textContent = `STAGE ${n.idx} / 07 · ${n.label}`;
+      document.getElementById('flywheel-active-headline').textContent = n.headline;
+      document.getElementById('flywheel-active-desc').textContent = n.desc;
+      renderFlywheelButtons();
+    }
+    function renderFlywheelButtons() {
+      document.getElementById('flywheel-buttons-circle').innerHTML = FLYWHEEL_ITEMS.map((n, i) => `
+        <button type="button" onclick="selectFlywheelNode(${i})" class="w-full px-4 py-3 rounded-xl text-left text-xs font-mono-tabular transition-all cursor-pointer flex items-center justify-between ${i === activeFlywheelIdx ? 'bg-[#4B1FD6] text-[#F8F8FA] shadow-md' : 'bg-[#181822] text-[#A1A1AA] hover:text-[#F8F8FA]'}">
+          <span>${n.idx} · ${n.label}</span>
+          <span>→</span>
+        </button>
+      `).join('');
+    }
+
+    function toggleCommunityStats() {
+      const grid = document.getElementById('community-stats-grid');
+      const hint = document.getElementById('community-stats-hint');
+      const isHidden = grid.classList.contains('hidden');
+      if (isHidden) {
+        grid.classList.remove('hidden');
+        grid.classList.add('grid');
+        hint.textContent = '(กดเพื่อซ่อนสถิติของคอมมูนิตี้)';
+      } else {
+        grid.classList.add('hidden');
+        grid.classList.remove('grid');
+        hint.textContent = '(กดที่หัวข้อเพื่อแสดงสถิติของคอมมูนิตี้)';
+      }
+    }
+
+    function openInquiryModal(defaultType) {
+      const modal = document.getElementById('inquiry-modal');
+      const sel = document.getElementById('modal-project-type');
+      if (sel && defaultType) sel.value = defaultType;
+      document.getElementById('modal-thankyou').classList.add('hidden');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    function closeInquiryModal() {
+      const modal = document.getElementById('inquiry-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+    function submitInquiryForm(e) {
+      e.preventDefault();
+      document.getElementById('modal-thankyou').classList.remove('hidden');
+      setTimeout(() => closeInquiryModal(), 2200);
+    }
+
+    // Bilingual Switcher (TH / EN)
+    const EN_STRINGS = {
+      'nav.about': 'About',
+      'nav.experience': 'Experience',
+      'nav.solutions': 'Solutions',
+      'nav.science': 'Movement Science',
+      'nav.community': 'Community',
+      'nav.partner': 'For Organizations & Brands',
+      'nav.startProject': 'Start a Project',
+      'hero.line1': 'MOVE BETTER.',
+      'hero.line2': 'LIVE BETTER.',
+      'hero.lead': 'We design active wellness experiences that make understanding your body, moving with confidence, and sustaining everyday health approachable and real.',
+      'hero.secondaryLead': 'JAIKLA ACTIVE WELLNESS connects body literacy, sport, movement, recovery, and community into experiences people genuinely want to join.'
+    };
+    const TH_STRINGS = {};
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('lang-btn-th').className = lang === 'th' ? 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]' : 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]';
+      document.getElementById('lang-btn-en').className = lang === 'en' ? 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]' : 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (!TH_STRINGS[key]) TH_STRINGS[key] = el.textContent.trim();
+        if (lang === 'en' && EN_STRINGS[key]) el.textContent = EN_STRINGS[key];
+        else if (lang === 'th' && TH_STRINGS[key]) el.textContent = TH_STRINGS[key];
+      });
+    }
+
+    // Initialize Dynamic Sections
+    window.addEventListener('DOMContentLoaded', () => {
+      renderFieldGallery();
+      renderSolutionsList();
+      renderFlywheelButtons();
+
+      document.getElementById('journey-cards-container').innerHTML = JOURNEY_DATA.map(st => `
+        <div class="p-5 rounded-2xl bg-[#141418] border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <span class="text-xs font-mono-tabular text-[#EBDDFF]">${st.idx} / 05</span>
+            <h3 class="font-display text-xl font-bold text-[#F8F8FA]">${st.name}</h3>
+            <p class="text-xs text-[#EBDDFF]">${st.sub}</p>
+            <p class="text-sm font-semibold text-[#F8F8FA] pt-1">${st.headline}</p>
+            <p class="text-xs text-[#A1A1AA] leading-relaxed">${st.desc}</p>
+          </div>
+          <ul class="pt-3 border-t border-[#F8F8FA]/10 space-y-1 text-[11px] text-[#EBDDFF]/90">
+            ${st.items.map(it => `<li>· ${it}</li>`).join('')}
+          </ul>
+        </div>
+      `).join('');
+
+      document.getElementById('why-jaikla-grid').innerHTML = WHY_DATA.map(w => `
+        <article class="p-5 rounded-2xl bg-[#141418] border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all space-y-2.5">
+          <span class="text-xs font-mono-tabular text-[#EBDDFF] font-semibold">${w.idx}</span>
+          <h3 class="font-display text-lg font-bold text-[#F8F8FA]">${w.title}</h3>
+          <p class="text-xs text-[#EBDDFF]">${w.sub}</p>
+          <p class="text-xs sm:text-sm text-[#A1A1AA] leading-relaxed">${w.desc}</p>
+        </article>
+      `).join('');
+
+      document.getElementById('telemetry-cards-grid').innerHTML = TELEMETRY_DATA.map(c => `
+        <div class="p-4 rounded-xl bg-[#14141A] border border-[#F8F8FA]/10 space-y-2">
+          <span class="text-[10px] font-mono-tabular text-[#A1A1AA] block">${c.tag}</span>
+          <h4 class="text-xs font-semibold text-[#EBDDFF]">${c.title}</h4>
+          <p class="text-[11px] text-[#A1A1AA] leading-relaxed">${c.desc}</p>
+        </div>
+      `).join('');
+
+      document.getElementById('expert-pillars-grid').innerHTML = EXPERT_PILLARS.map(p => `
+        <article class="p-5 rounded-2xl bg-[#141418] border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all space-y-2">
+          <span class="text-[11px] font-mono-tabular text-[#EBDDFF]">${p.idx}</span>
+          <h3 class="font-display text-lg font-bold text-[#F8F8FA]">${p.title}</h3>
+          <p class="text-xs text-[#EBDDFF]">${p.sub}</p>
+          <p class="text-xs sm:text-sm text-[#A1A1AA] leading-relaxed">${p.desc}</p>
+        </article>
+      `).join('');
+
+      document.getElementById('partner-formula-grid').innerHTML = FORMULA_STEPS.map((f, i) => `
+        <div class="p-5 rounded-xl bg-[#1B1829] border border-[#7C3AED]/60 space-y-1.5">
+          <div class="flex items-center justify-between text-xs font-mono-tabular text-[#EBDDFF]">
+            <span>${f.idx}</span>
+            ${i < 4 ? '<span class="text-[#7C3AED] font-bold">+</span>' : ''}
+          </div>
+          <h3 class="font-display text-xl font-bold text-[#F8F8FA]">${f.name}</h3>
+          <p class="text-xs text-[#EBDDFF]">${f.sub}</p>
+          <p class="text-xs text-[#A1A1AA] pt-1 leading-relaxed">${f.detail}</p>
+        </div>
+      `).join('');
+    });
+
+    window.addEventListener('scroll', () => {
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docH > 0 ? Math.min(100, Math.max(0, (window.scrollY / docH) * 100)) : 0;
+      const bar = document.getElementById('scroll-progress-bar');
+      if (bar) bar.style.width = pct + '%';
+    }, { passive: true });
+  </script>
+</body>
+</html>

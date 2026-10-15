@@ -1,0 +1,454 @@
+@import "tailwindcss";
+
+:root {
+  --purple-deep: #4B1FD6;
+  --purple-active: #7C3AED;
+  --purple-jaikla: #5B1FA6;
+  --black: #121212;
+  --charcoal: #111111;
+  --surface-elevated: #17171A;
+  --surface-border: rgba(248, 248, 250, 0.09);
+  --white: #F8F8FA;
+  --muted: #A1A1AA;
+  --lavender: #EBDDFF;
+  --transition: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: cubic-bezier(0.16, 1, 0.3, 1);
+  --radius: 12px;
+  --radius-lg: 16px;
+
+  /* Dynamic Browser Viewport Typography Variables (Updated in real time via JS visualViewport/innerWidth) */
+  --browser-vw: 1280px;
+  --browser-vh: 800px;
+  --fluid-type-scale: 1;
+  --thai-optimal-ch: 52ch;
+  --en-optimal-ch: 62ch;
+
+  /* Script-Specific Optical Scaling & Diacritic/Vowel Vertical Clearance Variables */
+  --script-hero-scale: 1;
+  --script-section-scale: 1;
+  --script-card-scale: 1;
+  --script-body-scale: 1;
+  --script-display-lh: 1.06;
+  --script-section-lh: 1.1;
+  --script-body-lh: 1.65;
+  --script-display-tracking: -0.02em;
+  --script-body-tracking: 0.005em;
+  --script-diacritic-pad: 0.08em;
+
+  /* Dynamic Thai Font Pairing Variables (Switchable in real time across the entire website) */
+  --thai-display-font: "Anuphan", "Noto Sans Thai", "IBM Plex Sans Thai";
+  --thai-body-font: "Anuphan", "IBM Plex Sans Thai", "Noto Sans Thai";
+}
+
+@layer base {
+  html {
+    background-color: var(--charcoal);
+    color: var(--white);
+    font-family: "Plus Jakarta Sans", "Outfit", var(--thai-body-font), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Noto Sans Arabic", -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    font-size: calc(16px * var(--fluid-type-scale, 1));
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1, "kern" 1, "liga" 1;
+    font-kerning: normal;
+  }
+
+  body {
+    background-color: var(--charcoal);
+    color: var(--white);
+    overflow-x: hidden;
+    letter-spacing: var(--script-body-tracking, 0.005em);
+    line-height: var(--script-body-lh, 1.65);
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1, "kern" 1, "liga" 1;
+    font-kerning: normal;
+    font-synthesis: none;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Outfit", "Plus Jakarta Sans", var(--thai-display-font), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Noto Sans Arabic", sans-serif;
+    text-wrap: balance;
+    overflow-wrap: normal;
+    word-break: normal;
+    letter-spacing: var(--script-display-tracking, -0.015em);
+    font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1, "kern" 1, "liga" 1;
+  }
+
+  .font-thai {
+    font-family: "Plus Jakarta Sans", "Outfit", var(--thai-body-font), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Noto Sans Arabic", sans-serif;
+    letter-spacing: 0em !important;
+    font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1, "kern" 1, "liga" 1;
+    font-kerning: normal;
+  }
+
+  .font-mono-tabular {
+    font-family: "Plus Jakarta Sans", "JetBrains Mono", var(--thai-body-font), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Noto Sans Arabic", monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1;
+  }
+}
+
+/* Multilingual script-specific line-height, vertical vowel/tone mark clearance & word-break rules.
+   Note: "Outfit" and "Plus Jakarta Sans" are always kept FIRST in the stack so Latin letters—especially
+   the brand letter "J" in JAIKLA—always match the clean crossbar-less geometric logo rather than
+   falling back to IBM Plex Sans Thai's top-serif Latin J.
+   CRITICAL: In Thai (th) and Arabic (ar), non-zero letter-spacing (such as Tailwind tracking-wider/widest)
+   must be forced to 0em so Thai Sara Am (ำ) and combining vowels/tone marks (ิ ี ึ ื ั ุ ู ่ ้ ๊ ๋ ์)
+   never shift off their base consonant, and Arabic cursive contextual ligatures never break. */
+html[lang="th"] *:not(.jaikla-brand-tracking),
+html[lang="ar"] *:not(.jaikla-brand-tracking) {
+  letter-spacing: 0em !important;
+  font-feature-settings: "ccmp" 1, "locl" 1, "mark" 1, "mkmk" 1, "kern" 1, "liga" 1;
+  font-kerning: normal;
+}
+
+html[lang="th"] h1,
+html[lang="th"] h2,
+html[lang="th"] h3,
+html[lang="th"] h4,
+html[lang="th"] .font-display {
+  font-family: "Outfit", "Plus Jakarta Sans", var(--thai-display-font), sans-serif;
+  letter-spacing: 0em !important;
+  line-height: var(--script-display-lh, 1.42);
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance;
+}
+
+html[lang="th"] p,
+html[lang="th"] li,
+html[lang="th"] span {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+html[lang="th"] .jaikla-display-hero {
+  font-size: clamp(2rem, calc(1.25rem + 2.55vw), 3.65rem);
+  line-height: 1.32;
+}
+
+html[lang="th"] .jaikla-display-section {
+  font-size: clamp(1.5rem, calc(1.05rem + 1.65vw), 2.35rem);
+  line-height: 1.38;
+}
+
+html[lang="th"] .jaikla-display-statement {
+  font-size: clamp(1.25rem, calc(0.95rem + 1.35vw), 1.95rem);
+  line-height: 1.4;
+}
+
+html[lang="ar"] {
+  direction: rtl;
+  font-family: "Plus Jakarta Sans", "Outfit", "Noto Sans Arabic", sans-serif;
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] .font-display {
+  font-family: "Outfit", "Plus Jakarta Sans", "Noto Sans Arabic", sans-serif;
+  letter-spacing: 0em !important;
+  line-height: var(--script-display-lh, 1.5);
+}
+
+html[lang="zh-Hans"] *,
+html[lang="ja"] *,
+html[lang="ko"] * {
+  font-feature-settings: "ccmp" 1, "locl" 1, "kern" 1;
+  font-kerning: normal;
+}
+
+html[lang="zh-Hans"] h1,
+html[lang="zh-Hans"] h2,
+html[lang="zh-Hans"] h3,
+html[lang="zh-Hans"] h4,
+html[lang="zh-Hans"] .font-display {
+  font-family: "Outfit", "Plus Jakarta Sans", "Noto Sans SC", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: var(--script-display-lh, 1.34);
+}
+
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4,
+html[lang="ja"] .font-display {
+  font-family: "Outfit", "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.015em;
+  line-height: var(--script-display-lh, 1.4);
+}
+
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3,
+html[lang="ko"] h4,
+html[lang="ko"] .font-display {
+  font-family: "Outfit", "Plus Jakarta Sans", "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: var(--script-display-lh, 1.36);
+}
+
+/* Prevent vertical clipping of 3-tier Thai tone marks (ี้ ื้ ั้) and Arabic ascenders/descenders
+   inside tight line-height or overflow-hidden (.truncate / .line-clamp-*) elements */
+html[lang="th"] .leading-none,
+html[lang="th"] .leading-tight,
+html[lang="th"] .leading-snug,
+html[lang="ar"] .leading-none,
+html[lang="ar"] .leading-tight,
+html[lang="ar"] .leading-snug {
+  line-height: 1.5 !important;
+}
+
+html[lang="th"] .truncate,
+html[lang="th"] .line-clamp-1,
+html[lang="th"] .line-clamp-2,
+html[lang="ar"] .truncate,
+html[lang="ar"] .line-clamp-1,
+html[lang="ar"] .line-clamp-2,
+.font-thai.truncate,
+.font-thai.line-clamp-1,
+.font-thai.line-clamp-2 {
+  line-height: 1.58 !important;
+  padding-top: 0.12em;
+  padding-bottom: 0.12em;
+}
+
+html[lang="zh-Hans"] .jaikla-smart-text,
+html[lang="ja"] .jaikla-smart-text {
+  line-break: strict;
+  word-break: normal;
+  line-height: var(--script-body-lh, 1.82);
+}
+
+html[lang="ko"] .jaikla-smart-text {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: var(--script-body-lh, 1.78);
+}
+
+/* Viewport & Script-Calculated Fluid Display Scales with Upper/Lower Vowel & Diacritic Protection */
+.jaikla-display-hero {
+  font-size: calc(clamp(2.15rem, calc(1.35rem + 4.1vw), 5.1rem) * var(--script-hero-scale, 1));
+  line-height: var(--script-display-lh, 1.06);
+  letter-spacing: var(--script-display-tracking, -0.02em);
+  padding-block: var(--script-diacritic-pad, 0.08em);
+  text-wrap: balance;
+}
+
+.jaikla-display-section {
+  font-size: calc(clamp(1.75rem, calc(1.2rem + 2.5vw), 3.45rem) * var(--script-section-scale, 1));
+  line-height: var(--script-section-lh, 1.12);
+  letter-spacing: var(--script-display-tracking, -0.015em);
+  padding-block: var(--script-diacritic-pad, 0.08em);
+  text-wrap: balance;
+}
+
+.jaikla-display-statement {
+  font-size: calc(clamp(1.45rem, calc(1.05rem + 2.1vw), 2.85rem) * var(--script-section-scale, 1));
+  line-height: var(--script-section-lh, 1.18);
+  letter-spacing: var(--script-display-tracking, -0.015em);
+  padding-block: calc(var(--script-diacritic-pad, 0.08em) * 0.75);
+  text-wrap: balance;
+}
+
+/* Ensure gradient bg-clip-text spans never clip stacked Thai tone marks or Arabic/CJK ascenders/descenders */
+.bg-clip-text {
+  padding-block: var(--script-diacritic-pad, 0.1em);
+  display: inline-block;
+}
+
+.jaikla-smart-thai {
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-break: strict;
+  line-height: var(--script-body-lh, 1.82);
+}
+
+.jaikla-smart-en {
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  line-height: var(--script-body-lh, 1.66);
+}
+
+/* Compact mobile viewport (<390px) specific optical refinements */
+html[data-viewport-tier="compact-mobile"] .jaikla-display-hero {
+  font-size: calc(clamp(1.85rem, 8.2vw, 2.4rem) * var(--script-hero-scale, 1));
+  line-height: var(--script-display-lh, 1.12);
+}
+
+html[data-viewport-tier="compact-mobile"] .jaikla-display-section {
+  font-size: calc(clamp(1.5rem, 6.8vw, 2.05rem) * var(--script-section-scale, 1));
+  line-height: var(--script-section-lh, 1.16);
+}
+
+html[data-viewport-tier="compact-mobile"] .jaikla-display-statement {
+  font-size: calc(clamp(1.25rem, 5.8vw, 1.75rem) * var(--script-section-scale, 1));
+  line-height: var(--script-section-lh, 1.2);
+}
+
+/* Campaign Photography Treatment:
+   cinematic contrast, natural skin tones, slightly reduced saturation,
+   deep blacks, subtle violet highlights (5-18% atmospheric overlay) */
+.jaikla-photo-grade {
+  filter: contrast(1.08) saturate(0.88) brightness(0.95);
+  transition: transform 480ms var(--transition), filter 480ms var(--transition);
+}
+
+.group:hover .jaikla-photo-grade-hover {
+  transform: scale(1.025);
+  filter: contrast(1.12) saturate(0.94) brightness(1);
+}
+
+/* Field Activity Photography Color-Grading Presets:
+   Harmonizes outdoor/indoor field lighting with the JAIKLA dark obsidian & electric violet system */
+.jaikla-field-grade-nocturne {
+  filter: contrast(1.12) saturate(0.84) brightness(0.92);
+  transition: transform 520ms var(--transition), filter 420ms var(--transition);
+}
+
+.group:hover .jaikla-field-grade-nocturne {
+  transform: scale(1.03);
+  filter: contrast(1.14) saturate(0.92) brightness(0.98);
+}
+
+.jaikla-field-grade-natural {
+  filter: contrast(1.06) saturate(0.96) brightness(0.96);
+  transition: transform 520ms var(--transition), filter 420ms var(--transition);
+}
+
+.group:hover .jaikla-field-grade-natural {
+  transform: scale(1.03);
+  filter: contrast(1.08) saturate(1.02) brightness(1);
+}
+
+.jaikla-field-grade-monochrome {
+  filter: grayscale(0.88) contrast(1.2) brightness(0.93);
+  transition: transform 520ms var(--transition), filter 420ms var(--transition);
+}
+
+.group:hover .jaikla-field-grade-monochrome {
+  transform: scale(1.03);
+  filter: grayscale(0.65) contrast(1.18) brightness(0.98);
+}
+
+@keyframes jaiklaMarqueeLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes jaiklaMarqueeRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.jaikla-animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: jaiklaMarqueeLeft 54s linear infinite;
+}
+
+.jaikla-animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: jaiklaMarqueeRight 58s linear infinite;
+}
+
+.jaikla-animate-marquee-left:hover,
+.jaikla-animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Subtle noise grain overlay */
+.jaikla-grain {
+  background-image: radial-gradient(rgba(235, 221, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Animated gradient button sheen */
+.jaikla-btn-primary {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-jaikla) 50%, var(--purple-active) 100%);
+  background-size: 200% 200%;
+  transition: transform 220ms var(--transition-fast), background-position 450ms var(--transition), box-shadow 220ms var(--transition-fast);
+}
+
+.jaikla-btn-primary:hover {
+  background-position: 100% 50%;
+  box-shadow: 0 10px 32px -8px rgba(124, 58, 237, 0.55);
+}
+
+/* Custom SweetAlert2 JAIKLA Identity Theme */
+.swal2-container.jaikla-swal-backdrop {
+  backdrop-filter: blur(12px);
+  background: rgba(17, 17, 17, 0.82) !important;
+}
+
+.swal2-popup.jaikla-swal-popup {
+  background: #141417 !important;
+  border: 1px solid rgba(235, 221, 255, 0.16) !important;
+  border-radius: 16px !important;
+  color: #F8F8FA !important;
+  padding: 2rem !important;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.85), 0 0 48px rgba(75, 31, 214, 0.18) !important;
+  font-family: "Plus Jakarta Sans", "Outfit", "IBM Plex Sans Thai", sans-serif !important;
+}
+
+.swal2-title.jaikla-swal-title {
+  font-family: "Outfit", "Plus Jakarta Sans", "IBM Plex Sans Thai", sans-serif !important;
+  color: #F8F8FA !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  text-align: left !important;
+  padding: 0 0 0.5rem 0 !important;
+}
+
+.swal2-html-container.jaikla-swal-html {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  color: #A1A1AA !important;
+}
+
+.jaikla-input-field {
+  width: 100%;
+  background: #111111;
+  border: 1px solid rgba(248, 248, 250, 0.14);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: #F8F8FA;
+  font-size: 0.925rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+  outline: none;
+}
+
+.jaikla-input-field:focus {
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+/* Reduced motion compliance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
