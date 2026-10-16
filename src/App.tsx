@@ -680,13 +680,13 @@ function JaiklaActiveWellnessContent() {
                     transition: 'transform 450ms cubic-bezier(0.22, 1, 0.36, 1)',
                   }}
                 >
-                  {/* Main Hero Portrait Card (campaign_15) */}
+                  {/* Main Hero Portrait Card (Realistic Runner in Motion) */}
                   <div className="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] shadow-2xl flex flex-col justify-between">
                     <div className="relative aspect-[4/5] w-full overflow-hidden">
                       <SmartCampaignImage
-                        src={CAMPAIGN_IMAGES.campaign_15.src}
+                        src="/assets/images/realistic/hero_card_runner.jpg"
                         fallbackSrc={STUDIO_WIDE_IMAGES.hero}
-                        alt={CAMPAIGN_IMAGES.campaign_15.titleEn}
+                        alt={locale === 'th' ? 'การวิ่งและการเคลื่อนไหวกลางแจ้ง' : 'Active Movement & Running'}
                         className="w-full h-full"
                         imgClassName="jaikla-photo-grade-hover"
                         overlayIntensity="subtle"
@@ -700,21 +700,21 @@ function JaiklaActiveWellnessContent() {
                       <SmartThaiText
                         text={
                           locale === 'th'
-                            ? CAMPAIGN_IMAGES.campaign_15.titleTh
-                            : CAMPAIGN_IMAGES.campaign_15.titleEn
+                            ? 'จังหวะการวิ่งและอิสรภาพในการเคลื่อนไหว'
+                            : 'Active Movement & Running Rhythm'
                         }
                         className="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5"
                       />
                     </div>
                   </div>
 
-                  {/* Secondary Performance Frame (campaign_09 Functional Strength Studio Coaching) */}
+                  {/* Secondary Performance Frame (Realistic Strength & Conditioning) */}
                   <div className="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] shadow-2xl flex flex-col justify-between">
                     <div className="relative aspect-[4/5] w-full overflow-hidden">
                       <SmartCampaignImage
-                        src={CAMPAIGN_IMAGES.campaign_09.src}
+                        src="/assets/images/realistic/hero_card_strength.jpg"
                         fallbackSrc={STUDIO_WIDE_IMAGES.perform}
-                        alt={CAMPAIGN_IMAGES.campaign_09.titleEn}
+                        alt={locale === 'th' ? 'การฝึกความแข็งแรงเชิงหน้าที่' : 'Functional Strength Training'}
                         className="w-full h-full"
                         imgClassName="jaikla-photo-grade-hover"
                         overlayIntensity="subtle"
@@ -728,8 +728,8 @@ function JaiklaActiveWellnessContent() {
                       <SmartThaiText
                         text={
                           locale === 'th'
-                            ? CAMPAIGN_IMAGES.campaign_09.titleTh
-                            : CAMPAIGN_IMAGES.campaign_09.titleEn
+                            ? 'ความแข็งแรงเชิงหน้าที่และสมรรถภาพทางกาย'
+                            : 'Functional Strength & Conditioning'
                         }
                         className="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5"
                       />
@@ -812,14 +812,14 @@ function JaiklaActiveWellnessContent() {
                 />
               </div>
 
-              {/* Right 5 Columns: Supplied Campaign Visuals (campaign_02 Body Awareness & campaign_08 Mobility) */}
+              {/* Right 5 Columns: Realistic Movement Philosophy Visuals (idea_grounding & idea_mobility) */}
               <div className="lg:col-span-5 grid grid-cols-12 gap-4 items-stretch">
                 <div className="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/10 bg-[#141418] flex flex-col justify-between">
                   <div className="relative aspect-[4/5] w-full overflow-hidden">
                     <SmartCampaignImage
-                      src={CAMPAIGN_IMAGES.campaign_02.src}
+                      src="/assets/images/realistic/idea_grounding.jpg"
                       fallbackSrc={STUDIO_WIDE_IMAGES.prepare}
-                      alt={CAMPAIGN_IMAGES.campaign_02.titleEn}
+                      alt={locale === 'th' ? 'การฝึกความมั่นคงและการรับรู้ร่างกาย' : 'Body Awareness & Alignment'}
                       className="w-full h-full"
                       imgClassName="jaikla-photo-grade-hover"
                       overlayIntensity="subtle"
@@ -832,8 +832,8 @@ function JaiklaActiveWellnessContent() {
                     <SmartThaiText
                       text={
                         locale === 'th'
-                          ? CAMPAIGN_IMAGES.campaign_02.titleTh
-                          : CAMPAIGN_IMAGES.campaign_02.titleEn
+                          ? 'การจัดระเบียบโครงสร้างและการรับรู้ร่างกาย'
+                          : 'Postural Alignment & Body Awareness'
                       }
                       className="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5"
                     />
@@ -843,9 +843,9 @@ function JaiklaActiveWellnessContent() {
                 <div className="col-span-6 group rounded-2xl overflow-hidden border border-[#F8F8FA]/10 bg-[#141418] flex flex-col justify-between">
                   <div className="relative aspect-[4/5] w-full overflow-hidden">
                     <SmartCampaignImage
-                      src={CAMPAIGN_IMAGES.campaign_08.src}
-                      fallbackSrc={STUDIO_WIDE_IMAGES.prepare}
-                      alt={CAMPAIGN_IMAGES.campaign_08.titleEn}
+                      src="/assets/images/realistic/idea_mobility.jpg"
+                      fallbackSrc={STUDIO_WIDE_IMAGES.perform}
+                      alt={locale === 'th' ? 'การเคลื่อนไหวเชิงหน้าที่และพลังงาน' : 'Functional Conditioning & Power'}
                       className="w-full h-full"
                       imgClassName="jaikla-photo-grade-hover"
                       overlayIntensity="subtle"
@@ -853,13 +853,13 @@ function JaiklaActiveWellnessContent() {
                   </div>
                   <div className="p-3.5 sm:p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
                     <p className="text-[10px] font-mono-tabular text-[#EBDDFF]">
-                      {locale === 'th' ? 'สหเวชศาสตร์ · ความคล่องตัว' : 'ALLIED HEALTH · MOBILITY'}
+                      {locale === 'th' ? 'สมรรถภาพ · การเคลื่อนไหว' : 'MOVEMENT · CONDITIONING'}
                     </p>
                     <SmartThaiText
                       text={
                         locale === 'th'
-                          ? CAMPAIGN_IMAGES.campaign_08.titleTh
-                          : CAMPAIGN_IMAGES.campaign_08.titleEn
+                          ? 'การฝึกความแข็งแรงเชิงหน้าที่และการส่งแรง'
+                          : 'Functional Strength & Kinetic Flow'
                       }
                       className="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5"
                     />
@@ -1371,18 +1371,24 @@ function JaiklaActiveWellnessContent() {
                         : 'border-[#F8F8FA]/10 bg-[#141418] hover:border-[#7C3AED]'
                     }`}
                   >
-                    {/* Dedicated Top Artwork Frame (Never Overlaps Text Below) */}
-                    <div className="relative h-36 overflow-hidden border-b border-[#F8F8FA]/8 bg-[#111116]">
-                      <div
-                        className={`w-full h-full transition-opacity duration-500 pointer-events-none ${
-                          isSelected ? 'opacity-100' : 'opacity-75 group-hover:opacity-95'
-                        }`}
-                      >
-                        <CapabilityKineticArtwork index={idx} isSelected={isSelected} />
-                      </div>
-                      <div className="absolute top-3 left-4 right-4 flex items-center justify-between text-xs font-mono-tabular">
-                        <span className="text-[#EBDDFF] font-semibold">{cap.index}</span>
-                        <span className="text-[10px] text-[#A1A1AA]">{cap.categoryLabel}</span>
+                    {/* Dedicated Top Photography Frame (Matches Capability Topic) */}
+                    <div className="relative h-40 overflow-hidden border-b border-[#F8F8FA]/8 bg-[#111116]">
+                      <SmartCampaignImage
+                        src={cap.image}
+                        fallbackSrc={STUDIO_WIDE_IMAGES.hero}
+                        alt={capLoc.title}
+                        className="w-full h-full"
+                        imgClassName="transition-transform duration-500 ease-out group-hover:scale-105"
+                        overlayIntensity="subtle"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#141418] via-transparent to-black/40 pointer-events-none" />
+                      <div className="absolute top-3 left-4 right-4 flex items-center justify-between text-xs font-mono-tabular z-10">
+                        <span className="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[#EBDDFF] font-semibold border border-[#F8F8FA]/10">
+                          {cap.index}
+                        </span>
+                        <span className="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[10px] text-[#F8F8FA]/90 border border-[#F8F8FA]/10">
+                          {cap.categoryLabel}
+                        </span>
                       </div>
                     </div>
 
@@ -1810,23 +1816,23 @@ function JaiklaActiveWellnessContent() {
               <div className="lg:col-span-6">
                 <div className="relative rounded-2xl overflow-hidden border border-[#F8F8FA]/12 aspect-[16/10] shadow-2xl">
                   <SmartCampaignImage
-                    src={CAMPAIGN_IMAGES.campaign_14.src}
-                    fallbackSrc={STUDIO_WIDE_IMAGES.recover}
-                    alt={CAMPAIGN_IMAGES.campaign_14.titleEn}
+                    src="/assets/images/realistic/performance_science.jpg"
+                    fallbackSrc={STUDIO_WIDE_IMAGES.perform}
+                    alt={locale === 'th' ? 'ห้องปฏิบัติการวิทยาศาสตร์การกีฬาและสมรรถภาพ' : 'Sports Science & Conditioning Lab'}
                     className="w-full h-full"
                     overlayIntensity="subtle"
                   />
-                  <div className="absolute bottom-0 inset-x-0 p-5 sm:p-6 flex items-end justify-between gap-4">
+                  <div className="absolute bottom-0 inset-x-0 p-5 sm:p-6 flex items-end justify-between gap-4 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
                     <div>
                       <p className="text-[11px] font-mono-tabular text-[#EBDDFF]">
                         {locale === 'th'
-                          ? 'คำแนะนำจากผู้เชี่ยวชาญ · วิทยาศาสตร์การฟื้นฟู'
-                          : 'EXPERT GUIDANCE · RECOVERY SCIENCE'}
+                          ? 'วิทยาศาสตร์การกีฬา · สมรรถภาพเชิงหน้าที่'
+                          : 'SPORTS SCIENCE · FUNCTIONAL PERFORMANCE'}
                       </p>
                       <p className="text-base sm:text-lg font-semibold text-[#F8F8FA]">
                         {locale === 'th'
-                          ? CAMPAIGN_IMAGES.campaign_14.titleTh
-                          : CAMPAIGN_IMAGES.campaign_14.titleEn}
+                          ? 'การประเมินและการฝึกซ้อมตามหลักชีวกลศาสตร์'
+                          : 'Biomechanical Conditioning & Movement Lab'}
                       </p>
                     </div>
                   </div>
@@ -1881,14 +1887,14 @@ function JaiklaActiveWellnessContent() {
               </div>
             </div>
 
-            {/* Exclusive Allied Health Coaching Lead Frame (campaign_07) + 6 Biomechanical Science Pillars */}
+            {/* Exclusive Allied Health Coaching Lead Frame + 6 Biomechanical Science Pillars */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
               <div className="lg:col-span-4 rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between">
                 <div className="relative aspect-[4/5] w-full overflow-hidden">
                   <SmartCampaignImage
-                    src={CAMPAIGN_IMAGES.campaign_07.src}
+                    src="/assets/images/realistic/expert_guidance.jpg"
                     fallbackSrc={STUDIO_WIDE_IMAGES.prepare}
-                    alt={CAMPAIGN_IMAGES.campaign_07.titleEn}
+                    alt={locale === 'th' ? 'การโค้ชโดยผู้เชี่ยวชาญการเคลื่อนไหว' : 'Allied Health Movement Coaching'}
                     className="w-full h-full"
                     imgClassName="jaikla-photo-grade-hover"
                     overlayIntensity="subtle"
@@ -1904,8 +1910,8 @@ function JaiklaActiveWellnessContent() {
                     as="h3"
                     text={
                       locale === 'th'
-                        ? CAMPAIGN_IMAGES.campaign_07.titleTh
-                        : CAMPAIGN_IMAGES.campaign_07.titleEn
+                        ? 'การโค้ชและแนะนำท่าทางอย่างใกล้ชิด'
+                        : 'Personalized Posture & Movement Literacy'
                     }
                     className="font-display text-xl font-bold text-[#F8F8FA]"
                   />
@@ -1913,7 +1919,7 @@ function JaiklaActiveWellnessContent() {
                     text={
                       locale === 'th'
                         ? 'ดูแลและแนะนำท่าทางการเคลื่อนไหวอย่างใกล้ชิด เพื่อให้ผู้เข้าร่วมเข้าใจร่างกายและขยับได้อย่างมั่นใจ'
-                        : CAMPAIGN_IMAGES.campaign_07.roleDescription
+                        : 'Hands-on movement guidance ensuring participants move with biomechanical precision and confidence.'
                     }
                     className="text-xs text-[#A1A1AA] leading-relaxed"
                   />
@@ -1926,11 +1932,24 @@ function JaiklaActiveWellnessContent() {
                     key={pillar.index}
                     className="group rounded-2xl overflow-hidden bg-[#141418] border border-[#F8F8FA]/10 hover:border-[#7C3AED] transition-all duration-300 flex flex-col justify-between"
                   >
-                    <div className="relative h-36 overflow-hidden border-b border-[#F8F8FA]/8">
-                      <ExpertPillarScienceDiagram pillarIndex={pillar.index} />
-                      <div className="absolute top-3 left-4 right-4 flex items-center justify-between text-[11px] font-mono-tabular text-[#EBDDFF]">
-                        <span>{pillar.index}</span>
-                        <span>{pillar.category}</span>
+                    {/* Realistic Photography Frame for Each Pillar Topic */}
+                    <div className="relative h-40 overflow-hidden border-b border-[#F8F8FA]/8 bg-[#111116]">
+                      <SmartCampaignImage
+                        src={pillar.image}
+                        fallbackSrc={STUDIO_WIDE_IMAGES.prepare}
+                        alt={pillar.loc.title}
+                        className="w-full h-full"
+                        imgClassName="transition-transform duration-500 ease-out group-hover:scale-105"
+                        overlayIntensity="subtle"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#141418] via-transparent to-black/40 pointer-events-none" />
+                      <div className="absolute top-3 left-4 right-4 flex items-center justify-between text-[11px] font-mono-tabular text-[#EBDDFF] z-10">
+                        <span className="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md font-semibold border border-[#F8F8FA]/10">
+                          {pillar.index}
+                        </span>
+                        <span className="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[10px] text-[#F8F8FA]/90 border border-[#F8F8FA]/10">
+                          {pillar.category}
+                        </span>
                       </div>
                     </div>
 
@@ -2120,9 +2139,9 @@ function JaiklaActiveWellnessContent() {
                 <div className="col-span-7 rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between group">
                   <div className="relative aspect-[4/5] w-full overflow-hidden flex-1">
                     <SmartCampaignImage
-                      src={CAMPAIGN_IMAGES.campaign_11.src}
+                      src="/assets/images/realistic/community_gathering.jpg"
                       fallbackSrc={STUDIO_WIDE_IMAGES.community}
-                      alt={CAMPAIGN_IMAGES.campaign_11.titleEn}
+                      alt={locale === 'th' ? 'คอมมูนิตี้วิ่งและออกกำลังกายกลางแจ้ง' : 'Outdoor Running & Movement Community'}
                       className="w-full h-full"
                       imgClassName="jaikla-photo-grade-hover"
                       overlayIntensity="subtle"
@@ -2130,13 +2149,13 @@ function JaiklaActiveWellnessContent() {
                   </div>
                   <div className="p-4 bg-[#131318] border-t border-[#F8F8FA]/10">
                     <p className="text-[10px] font-mono-tabular text-[#EBDDFF]">
-                      {locale === 'th' ? 'คอมมูนิตี้วิ่งและเทรล' : 'RUN & TRAIL COMMUNITY'}
+                      {locale === 'th' ? 'คอมมูนิตี้วิ่งและการเคลื่อนไหว' : 'RUN & MOVEMENT COMMUNITY'}
                     </p>
                     <SmartThaiText
                       text={
                         locale === 'th'
-                          ? CAMPAIGN_IMAGES.campaign_11.titleTh
-                          : CAMPAIGN_IMAGES.campaign_11.titleEn
+                          ? 'การรวมกลุ่มซ้อมวิ่งและการสร้างมิตรภาพผ่านการเคลื่อนไหว'
+                          : 'Inclusive Running Community & Social Belonging'
                       }
                       className="text-xs sm:text-sm font-medium text-[#F8F8FA] mt-0.5"
                     />
@@ -2147,9 +2166,9 @@ function JaiklaActiveWellnessContent() {
                   <div className="rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between group flex-1">
                     <div className="relative aspect-[16/11] w-full overflow-hidden flex-1">
                       <SmartCampaignImage
-                        src={CAMPAIGN_IMAGES.campaign_03.src}
+                        src="/assets/images/realistic/community_longevity.jpg"
                         fallbackSrc={STUDIO_WIDE_IMAGES.community}
-                        alt={CAMPAIGN_IMAGES.campaign_03.titleEn}
+                        alt={locale === 'th' ? 'คลับสุขภาพและการเคลื่อนไหว Active 40+' : 'Active 40+ Longevity & Mobility'}
                         className="w-full h-full"
                         imgClassName="jaikla-photo-grade-hover"
                         overlayIntensity="subtle"
@@ -2162,8 +2181,8 @@ function JaiklaActiveWellnessContent() {
                       <SmartThaiText
                         text={
                           locale === 'th'
-                            ? CAMPAIGN_IMAGES.campaign_03.titleTh
-                            : CAMPAIGN_IMAGES.campaign_03.titleEn
+                            ? 'การเสริมสร้างกล้ามเนื้อแกนกลางและความยืนยาว'
+                            : 'Core Stability & Lifelong Movement Habit'
                         }
                         className="text-xs font-medium text-[#F8F8FA] mt-0.5"
                       />
@@ -2173,9 +2192,9 @@ function JaiklaActiveWellnessContent() {
                   <div className="rounded-2xl overflow-hidden border border-[#F8F8FA]/12 bg-[#141418] flex flex-col justify-between group flex-1">
                     <div className="relative aspect-[16/11] w-full overflow-hidden flex-1">
                       <SmartCampaignImage
-                        src={CAMPAIGN_IMAGES.campaign_05.src}
+                        src="/assets/images/realistic/community_recovery.jpg"
                         fallbackSrc={STUDIO_WIDE_IMAGES.recover}
-                        alt={CAMPAIGN_IMAGES.campaign_05.titleEn}
+                        alt={locale === 'th' ? 'การยืดเหยียดและการฟื้นฟูร่างกาย' : 'Evening Mobility & Stretch Recovery'}
                         className="w-full h-full"
                         imgClassName="jaikla-photo-grade-hover"
                         overlayIntensity="subtle"
@@ -2183,13 +2202,13 @@ function JaiklaActiveWellnessContent() {
                     </div>
                     <div className="p-3.5 bg-[#131318] border-t border-[#F8F8FA]/10">
                       <p className="text-[10px] font-mono-tabular text-[#EBDDFF]">
-                        {locale === 'th' ? 'การคลายพังผืดกล้ามเนื้อ' : 'MYOFASCIAL RESET'}
+                        {locale === 'th' ? 'การฟื้นฟูและการยืดเหยียด' : 'RECOVERY & MOBILITY'}
                       </p>
                       <SmartThaiText
                         text={
                           locale === 'th'
-                            ? CAMPAIGN_IMAGES.campaign_05.titleTh
-                            : CAMPAIGN_IMAGES.campaign_05.titleEn
+                            ? 'ช่วงเวลาผ่อนคลายและดูแลร่างกายอย่างถูกวิธี'
+                            : 'Mindful Cooldown & Posture Realignment'
                         }
                         className="text-xs font-medium text-[#F8F8FA] mt-0.5"
                       />

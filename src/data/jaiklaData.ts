@@ -472,7 +472,7 @@ export const JOURNEY_STAGES: JourneyStage[] = [
       'Dynamic Joint Mobility Protocols',
       'Breath & Core Stabilization Primer',
     ],
-    portraitImage: CAMPAIGN_IMAGES.campaign_01.src,
+    portraitImage: '/assets/images/realistic/stage_01_prepare.jpg',
     objectPosition: '50% 38%',
     wideBackdrop: STUDIO_WIDE_IMAGES.prepare,
     categoryTag: 'MOBILITY · BODY AWARENESS',
@@ -495,7 +495,7 @@ export const JOURNEY_STAGES: JourneyStage[] = [
       'Functional Movement Literacy Sessions',
       'Inclusive Community Pacing Formats',
     ],
-    portraitImage: CAMPAIGN_IMAGES.campaign_10.src,
+    portraitImage: '/assets/images/realistic/stage_02_move.jpg',
     objectPosition: '50% 38%',
     wideBackdrop: STUDIO_WIDE_IMAGES.move,
     categoryTag: 'MOVEMENT · FLOW',
@@ -518,7 +518,7 @@ export const JOURNEY_STAGES: JourneyStage[] = [
       'Strength & Power Progression Labs',
       'Endurance Pacing & Energy Systems',
     ],
-    portraitImage: CAMPAIGN_IMAGES.campaign_12.src,
+    portraitImage: '/assets/images/realistic/stage_03_perform.jpg',
     objectPosition: '50% 35%',
     wideBackdrop: STUDIO_WIDE_IMAGES.perform,
     categoryTag: 'PERFORMANCE · STRENGTH',
@@ -541,7 +541,7 @@ export const JOURNEY_STAGES: JourneyStage[] = [
       'Guided Myofascial & Mobility Workshops',
       'Office & Corporate Body Reset Stations',
     ],
-    portraitImage: CAMPAIGN_IMAGES.campaign_04.src,
+    portraitImage: '/assets/images/realistic/stage_04_recover.jpg',
     objectPosition: '50% 40%',
     wideBackdrop: STUDIO_WIDE_IMAGES.recover,
     categoryTag: 'RECOVERY · ALLIED HEALTH',
@@ -564,7 +564,7 @@ export const JOURNEY_STAGES: JourneyStage[] = [
       'Ongoing Run & Movement Club Frameworks',
       'Educational Content & Progression Tracking',
     ],
-    portraitImage: CAMPAIGN_IMAGES.campaign_06.src,
+    portraitImage: '/assets/images/realistic/stage_05_develop.jpg',
     objectPosition: '50% 40%',
     wideBackdrop: STUDIO_WIDE_IMAGES.community,
     categoryTag: 'PROGRESSION · LONGEVITY',
@@ -595,7 +595,7 @@ export const WHY_JAIKLA_CAPABILITIES: CapabilityItem[] = [
       'Translating sports science, biomechanics, and physical wellness principles into clear, practical guidance that everyday movers and athletes can immediately apply.',
     descriptionTh:
       'แปลงความรู้ด้านสรีรวิทยา ชีวกลศาสตร์ และการดูแลร่างกาย ให้เข้าใจง่าย ปฏิบัติได้จริง โดยไม่ใช้ศัพท์ทางการแพทย์ที่ซับซ้อนหรือน่ากลัว',
-    image: CAMPAIGN_IMAGES.campaign_07.src,
+    image: '/assets/images/realistic/cap_01_sports_science.jpg',
     categoryLabel: 'EXPERT GUIDANCE · SCIENCE',
     metricsLabel: 'Biomechanics · Mobility · Exercise Literacy',
   },
@@ -608,7 +608,7 @@ export const WHY_JAIKLA_CAPABILITIES: CapabilityItem[] = [
       'From beginner pacing and Active 40+ movement sessions to high-output endurance preparation, every activity is structured around progressive load and safe execution.',
     descriptionTh:
       'ออกแบบกิจกรรมการวิ่ง การเดิน และการฝึกความแข็งแรงที่เหมาะกับระดับร่างกายของผู้เข้าร่วมแต่ละกลุ่มอย่างแท้จริง',
-    image: CAMPAIGN_IMAGES.campaign_10.src,
+    image: '/assets/images/realistic/cap_02_real_world.jpg',
     categoryLabel: 'SPORT · MOVEMENT',
     metricsLabel: 'Run Clubs · Conditioning · Inclusive Pacing',
   },
@@ -621,7 +621,7 @@ export const WHY_JAIKLA_CAPABILITIES: CapabilityItem[] = [
       'We choreograph every touchpoint—from pre-activity readiness zones and kinetic stage production to intelligent recovery lounges that leave a lasting brand impression.',
     descriptionTh:
       'ยกระดับการจัดงานด้วยมาตรฐานโปรดักชันที่พิถีพิถัน ผสานโซนเตรียมร่างกาย กิจกรรมหลัก และโซนฟื้นฟูเข้าด้วยกันอย่างไร้รอยต่อ',
-    image: CAMPAIGN_IMAGES.campaign_13.src,
+    image: '/assets/images/realistic/cap_03_habits.jpg',
     categoryLabel: 'EXPERIENCE · PRODUCTION',
     metricsLabel: 'Wellness Festivals · Recovery Zones · Activations',
   },
@@ -634,7 +634,7 @@ export const WHY_JAIKLA_CAPABILITIES: CapabilityItem[] = [
       'Backed by JAIKLA DIGITAL’s creative and digital DNA, we turn expert movement knowledge and live activations into compelling video, editorial, and social ecosystems.',
     descriptionTh:
       'ต่อยอดความเชี่ยวชาญจาก JAIKLA DIGITAL สร้างสรรค์คอนเทนต์คุณภาพสูงที่เปลี่ยนความรู้ด้านการเคลื่อนไหวให้เป็นเรื่องราวที่น่าติดตามและแชร์ต่อ',
-    image: CAMPAIGN_IMAGES.campaign_06.src,
+    image: '/assets/images/realistic/cap_04_community.jpg',
     categoryLabel: 'DIGITAL · STORYTELLING',
     metricsLabel: 'Campaign Films · Educational Series · Social Reach',
   },
@@ -647,7 +647,7 @@ export const WHY_JAIKLA_CAPABILITIES: CapabilityItem[] = [
       'Sustained behavior change thrives in community. We cultivate active micro-communities inside organizations, retail spaces, and urban neighborhoods.',
     descriptionTh:
       'สร้างพื้นที่ปลอดภัยและเป็นกันเองให้ผู้คนมาเคลื่อนไหว พูดคุย และพัฒนาสุขภาพร่วมกันอย่างต่อเนื่อง ทั้งในระดับองค์กรและระดับเมือง',
-    image: CAMPAIGN_IMAGES.campaign_11.src,
+    image: '/assets/images/realistic/cap_05_data.jpg',
     categoryLabel: 'COMMUNITY · CULTURE',
     metricsLabel: 'Run/Walk Clubs · Active 40+ · Corporate Tribes',
   },
@@ -849,7 +849,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Learning to read tension, balance, and movement patterns before stepping into high-intensity training.',
     descriptionTh: 'ฝึกสังเกตสมดุลท่าทาง จังหวะการหายใจ และสัญญาณของร่างกายในชีวิตประจำวัน',
-    image: CAMPAIGN_IMAGES.campaign_02.src,
+    image: '/assets/images/realistic/pillar_01_awareness.jpg',
     category: 'BODY AWARENESS',
   },
   {
@@ -860,7 +860,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Structured activation routines that prepare tendons, fascia, and nervous system pathways for real-world load.',
     descriptionTh: 'ลำดับการวอร์มอัปและกระตุ้นกล้ามเนื้อที่ออกแบบตามหลักชีวกลศาสตร์ก่อนเริ่มกิจกรรม',
-    image: CAMPAIGN_IMAGES.campaign_08.src,
+    image: '/assets/images/realistic/pillar_02_prep.jpg',
     category: 'EXPERT GUIDANCE',
   },
   {
@@ -871,7 +871,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Replacing guesswork and aggressive fitness myths with clear, science-backed exercise literacy.',
     descriptionTh: 'เข้าใจเหตุผลเบื้องหลังทุกท่าฝึก รู้จักการกะระดับความหนักที่เหมาะสมกับร่างกายตนเอง',
-    image: CAMPAIGN_IMAGES.campaign_14.src,
+    image: '/assets/images/realistic/pillar_03_education.jpg',
     category: 'EXPERT GUIDANCE',
   },
   {
@@ -882,7 +882,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Active cooldown protocols, foam rolling mechanics, and restorative breathwork that accelerate readiness.',
     descriptionTh: 'เทคนิคการคลายกล้ามเนื้อและลดความล้าสะสม เพื่อให้ร่างกายฟื้นตัวได้อย่างมีประสิทธิภาพ',
-    image: CAMPAIGN_IMAGES.campaign_05.src,
+    image: '/assets/images/realistic/pillar_04_recovery.jpg',
     category: 'RECOVERY',
   },
   {
@@ -893,7 +893,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Unlocking functional range of motion across ankles, hips, and spine so every stride and lift feels unrestricted.',
     descriptionTh: 'พัฒนาช่วงการเคลื่อนไหวของข้อต่อสำคัญ เพื่อให้ทุกก้าวมีความคล่องตัวและลดการบาดเจ็บ',
-    image: CAMPAIGN_IMAGES.campaign_01.src,
+    image: '/assets/images/realistic/pillar_05_mobility.jpg',
     category: 'MOBILITY',
   },
   {
@@ -904,7 +904,7 @@ export const EXPERT_GUIDANCE_PILLARS: ExpertPillar[] = [
     description:
       'Building resilient muscular support and tendon durability that serve everyday life and lifelong sport.',
     descriptionTh: 'สร้างความแข็งแรงของกล้ามเนื้อและข้อต่อเพื่อรองรับแรงกระแทกและเพิ่มประสิทธิภาพการเคลื่อนไหว',
-    image: CAMPAIGN_IMAGES.campaign_09.src,
+    image: '/assets/images/realistic/pillar_06_strength.jpg',
     category: 'STRENGTH',
   },
 ];
